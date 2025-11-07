@@ -19,6 +19,24 @@ export default defineNuxtConfig({
   // Configure for GitHub Pages deployment
   app: {
     baseURL: '/my-project/',
+    head: {
+      script: [
+        {
+          innerHTML: `
+            // Prevent theme flash on page load
+            (function() {
+              const savedTheme = localStorage.getItem('darkMode');
+              const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+              const isDark = savedTheme !== null ? savedTheme === 'true' : prefersDark;
+              if (isDark) {
+                document.documentElement.classList.add('dark');
+              }
+            })();
+          `,
+          type: 'text/javascript',
+        },
+      ],
+    },
   },
 
   modules: ['@nuxt/content', '@nuxt/eslint', '@nuxt/image', '@nuxt/scripts', '@nuxt/test-utils', '@nuxt/ui'],

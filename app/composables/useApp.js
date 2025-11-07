@@ -1,4 +1,4 @@
-import { computed, ref } from 'vue';
+import { computed, onUnmounted, ref } from 'vue';
 
 export const useAppData = () => {
   // Apps data based on your React Native code
@@ -207,10 +207,56 @@ export const useAppData = () => {
 export const useDarkMode = () => {
   const isDark = ref(false);
 
+  // Initialize dark mode with proper SSR handling
+  const initializeDarkMode = () => {
+    if (process.client) {
+      // Check for saved preference or system preference
+      const savedTheme = localStorage.getItem('darkMode');
+      if (savedTheme !== null) {
+        isDark.value = savedTheme === 'true';
+      } else {
+        // Use system preference
+        isDark.value = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+
+      // Apply the theme immediately
+      document.documentElement.classList.toggle('dark', isDark.value);
+    }
+  };
+
   const toggleDarkMode = () => {
     isDark.value = !isDark.value;
-    document.documentElement.classList.toggle('dark', isDark.value);
+
+    if (process.client) {
+      // Update DOM
+      document.documentElement.classList.toggle('dark', isDark.value);
+
+      // Save preference
+      localStorage.setItem('darkMode', isDark.value.toString());
+    }
   };
+
+  // Initialize on client side
+  if (process.client) {
+    initializeDarkMode();
+
+    // Listen for system theme changes
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleSystemThemeChange = (e) => {
+      // Only update if no manual preference is saved
+      if (localStorage.getItem('darkMode') === null) {
+        isDark.value = e.matches;
+        document.documentElement.classList.toggle('dark', isDark.value);
+      }
+    };
+
+    mediaQuery.addEventListener('change', handleSystemThemeChange);
+
+    // Cleanup listener when component unmounts
+    onUnmounted(() => {
+      mediaQuery.removeEventListener('change', handleSystemThemeChange);
+    });
+  }
 
   return {
     isDark,
