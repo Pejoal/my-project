@@ -9,5 +9,17 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
+  // Enable static site generation for GitHub Pages
+  nitro: {
+    prerender: {
+      routes: ['/'],
+    },
+  },
+
+  // Configure for GitHub Pages deployment
+  app: {
+    baseURL: '/',
+  },
+
   modules: ['@nuxt/content', '@nuxt/eslint', '@nuxt/image', '@nuxt/scripts', '@nuxt/test-utils', '@nuxt/ui'],
 });
