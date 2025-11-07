@@ -95,47 +95,18 @@ pnpm generate
 
 ```
 ├── components/
-│   ├── portfolio/           # Portfolio-specific components
-│   │   ├── PortfolioLayout.vue
-│   │   ├── HeaderSection.vue
-│   │   ├── DeveloperProfiles.vue
-│   │   ├── MobileAppsSection.vue
-│   │   ├── WebProjectsSection.vue
-│   │   ├── SkillsSection.vue
-│   │   └── ExperienceSection.vue
-│   └── ui/                 # Reusable UI components
-│       └── DarkModeToggle.vue
 ├── public/
 │   └── assets/            # Static assets (images, CV, etc.)
 ├── app/
 │   └── app.vue           # Main application component
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml    # GitHub Pages deployment workflow
 └── nuxt.config.ts       # Nuxt configuration
 ```
 
 ## ✨ Customization
 
 ### Personal Information
-
-Update the profile data in `components/portfolio/HeaderSection.vue`
-
-### Projects
-
-Modify the projects array in `components/portfolio/WebProjectsSection.vue`
-
-### Mobile Apps
-
-Update the apps data in `components/portfolio/MobileAppsSection.vue`
-
-### Skills
-
-Customize skills in `components/portfolio/SkillsSection.vue`
-
-### Experience
-
-Update job history in `components/portfolio/ExperienceSection.vue`
 
 ### Styling
 
