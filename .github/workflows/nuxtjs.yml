@@ -85,6 +85,9 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Static HTML export with Nuxt
         run: ${{ steps.detect-package-manager.outputs.runner }} run generate
+        env:
+          NODE_ENV: production
+          NUXT_APP_BASE_URL: /my-project/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -29,12 +29,17 @@
           >
         </div>
 
-        <button
-          @click="$emit('toggle-dark-mode')"
-          class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-        >
-          <Icon :name="isDark ? 'heroicons:sun' : 'heroicons:moon'" class="w-5 h-5" />
-        </button>
+        <ClientOnly>
+          <button
+            @click="$emit('toggle-dark-mode')"
+            class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+          >
+            <Icon :name="isDark ? 'heroicons:sun' : 'heroicons:moon'" class="w-5 h-5" />
+          </button>
+          <template #fallback>
+            <div class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 w-10 h-10"></div>
+          </template>
+        </ClientOnly>
       </div>
     </div>
   </nav>

@@ -18,7 +18,8 @@ export default defineNuxtConfig({
 
   // Configure for GitHub Pages deployment
   app: {
-    baseURL: '/my-project/',
+    baseURL: '/',
+    buildAssetsDir: '/_nuxt/',
     head: {
       script: [
         {
@@ -37,6 +38,14 @@ export default defineNuxtConfig({
         },
       ],
     },
+  },
+
+  // Ensure proper static generation
+  ssr: true,
+
+  // GitHub Pages specific settings
+  experimental: {
+    payloadExtraction: false,
   },
 
   modules: ['@nuxt/content', '@nuxt/eslint', '@nuxt/image', '@nuxt/scripts', '@nuxt/test-utils', '@nuxt/ui'],
