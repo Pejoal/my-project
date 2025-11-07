@@ -7,7 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "nuxt generate && gh-pages -d dist",
+    "deploy:github": "cross-env NUXT_APP_BASE_URL=/my-project/ nuxt generate"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
@@ -30,5 +32,9 @@
     "typescript": "^5.6.3",
     "vue": "^3.5.22",
     "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "gh-pages": "^6.3.0"
   }
 }

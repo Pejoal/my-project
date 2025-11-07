@@ -13,12 +13,13 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: ['/'],
+      failOnError: false,
     },
   },
 
   // Configure for GitHub Pages deployment
   app: {
-    baseURL: '/',
+    baseURL: '/my-project/',
     buildAssetsDir: '/_nuxt/',
     head: {
       script: [
@@ -48,5 +49,5 @@ export default defineNuxtConfig({
     payloadExtraction: false,
   },
 
-  modules: ['@nuxt/content', '@nuxt/eslint', '@nuxt/image', '@nuxt/scripts', '@nuxt/test-utils', '@nuxt/ui'],
+  modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/scripts', '@nuxt/test-utils', '@nuxt/ui'],
 });
