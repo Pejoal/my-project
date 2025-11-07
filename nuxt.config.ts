@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 
   // Configure for GitHub Pages deployment
   app: {
-    baseURL: '/',
+    baseURL: '/my-project/',
   },
 
   modules: ['@nuxt/content', '@nuxt/eslint', '@nuxt/image', '@nuxt/scripts', '@nuxt/test-utils', '@nuxt/ui'],
