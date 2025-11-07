@@ -1,5 +1,6 @@
 {
   "name": "pejoal-portfolio",
+  "version": "1.0.0",
   "type": "module",
   "private": true,
   "scripts": {
@@ -9,7 +10,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "deploy": "nuxt generate && gh-pages -d .output/public",
-    "deploy:github": "cross-env NUXT_APP_BASE_URL=/my-project/ nuxt generate"
+    "deploy:github": "cross-env NUXT_APP_BASE_URL=/ nuxt generate"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
