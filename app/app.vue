@@ -13,6 +13,8 @@
     <!-- About Section -->
     <AboutSection />
 
+    <SkillsSection />
+
     <!-- Apps Portfolio Section -->
     <AppsPortfolioSection
       :german-apps="germanApps"
@@ -24,6 +26,7 @@
       :test-apps="testApps"
       :game-apps="gameApps"
     />
+    <WebProjectsSection />
 
     <!-- Contact Section -->
     <ContactSection />
@@ -34,7 +37,16 @@
 </template>
 
 <script setup>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { useAppData, useDarkMode } from '~/composables/useApp';
+onMounted(() => {
+  AOS.init({
+    duration: 800,
+    once: true,
+    easing: 'ease-out-cubic',
+  });
+});
 
 // Use composables for app data and dark mode
 const { germanApps, englishApps, spanishApps, italianApps, otherLanguageApps, utilityApps, testApps, gameApps } =
