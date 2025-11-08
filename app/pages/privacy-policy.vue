@@ -12,7 +12,7 @@
       <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-6">Privacy Policy</h1>
       <p class="text-sm text-gray-500 dark:text-gray-400 mb-8">Last updated: November 08, 2025</p>
 
-      <div class="prose prose-lg dark:prose-invert max-w-none">
+      <div class="max-w-none">
         <p class="dark:text-gray-300">
           At <strong>Pejoal Dev Studio</strong>, we respect your privacy. This policy explains how we collect, use, and
           protect your information when you use our apps and website.
@@ -41,6 +41,16 @@
         <p class="dark:text-gray-300">
           Email: <a href="mailto:pejoal.business@gmail.com" class="text-blue-600">pejoal.business@gmail.com</a>
         </p>
+      </div>
+
+      <!-- Footer CTA -->
+      <div class="mt-16 text-center">
+        <NuxtLink
+          to="/terms"
+          class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
+        >
+          ← Terms and Conditions
+        </NuxtLink>
       </div>
     </div>
   </div>

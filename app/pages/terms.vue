@@ -18,7 +18,7 @@
       <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">Last updated: <strong>November 08, 2025</strong></p>
 
       <!-- Content -->
-      <div class="prose prose-lg dark:prose-invert max-w-none space-y-8">
+      <div class="max-w-none space-y-8">
         <section>
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">1. Acceptance of Terms</h2>
           <p class="dark:text-gray-300">
@@ -48,7 +48,9 @@
             by <strong>Pejoal Hanna</strong> and protected by copyright, trademark, and other intellectual property
             laws.
           </p>
-          <p class="dark:text-gray-300">You may not reproduce, modify, distribute, or create derivative works without prior written consent.</p>
+          <p class="dark:text-gray-300">
+            You may not reproduce, modify, distribute, or create derivative works without prior written consent.
+          </p>
         </section>
 
         <section>
@@ -130,7 +132,9 @@
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">11. Contact Information</h2>
           <p class="dark:text-gray-300">
             For questions about these Terms, contact us at:<br />
-            <a href="mailto:pejoal.business@gmail.com" class="text-blue-600 hover:underline">pejoal.business@gmail.com</a>
+            <a href="mailto:pejoal.business@gmail.com" class="text-blue-600 hover:underline"
+              >pejoal.business@gmail.com</a
+            >
           </p>
         </section>
       </div>
