@@ -17,7 +17,7 @@
 
       <!-- German Learning Apps -->
       <AppSection
-        title="🇩🇪 German Learning Apps"
+        title="German Learning Apps"
         description="Comprehensive German language learning suite from A1 to C2 level"
         :apps="germanApps"
         color="blue"
@@ -25,7 +25,7 @@
 
       <!-- English Learning Apps -->
       <AppSection
-        title="🇺🇸 English Learning Apps"
+        title="English Learning Apps"
         description="Master English with our interactive learning platform"
         :apps="englishApps"
         color="indigo"
@@ -33,7 +33,7 @@
 
       <!-- Spanish Learning Apps -->
       <AppSection
-        title="🇪🇸 Spanish Learning Apps"
+        title="Spanish Learning Apps"
         description="Learn Spanish effectively with our comprehensive course"
         :apps="spanishApps"
         color="red"
@@ -41,7 +41,7 @@
 
       <!-- Italian Learning Apps -->
       <AppSection
-        title="🇮🇹 Italian Learning Apps"
+        title="Italian Learning Apps"
         description="Discover the beauty of Italian language through interactive lessons"
         :apps="italianApps"
         color="green"
@@ -49,7 +49,7 @@
 
       <!-- Other Language Apps -->
       <AppSection
-        title="🌍 Other Languages"
+        title="Other Languages"
         description="Explore French, Russian and more languages"
         :apps="otherLanguageApps"
         color="purple"
@@ -57,7 +57,7 @@
 
       <!-- Utility Apps -->
       <AppSection
-        title="🛠️ Utility Apps"
+        title="Utility Apps"
         description="Powerful tools for productivity and daily tasks"
         :apps="utilityApps"
         color="emerald"
@@ -65,7 +65,7 @@
 
       <!-- Test & Assessment Apps -->
       <AppSection
-        title="🧠 Tests & Assessments"
+        title="Tests & Assessments"
         description="Challenge yourself with IQ tests, personality assessments, and trivia"
         :apps="testApps"
         color="violet"
@@ -73,7 +73,7 @@
 
       <!-- Games -->
       <AppSection
-        title="🎮 Games"
+        title="Games"
         description="Fun and engaging puzzle games for entertainment"
         :apps="gameApps"
         color="pink"
