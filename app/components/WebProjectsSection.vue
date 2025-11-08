@@ -82,7 +82,7 @@ const projects = ref([
     description:
       'An ERP system built with Laravel, MariaDB, Vue 3, and modern technologies. **Note: The live site may take up to 1 minute to load on the first visit.** Use test (admin) credentials: (Username: pejoal, Password: password).',
     live: 'https://project-manager-tvrw.onrender.com/payroll/dashboard',
-    image: '/assets/erp.png',
+    image: 'https://github.com/user-attachments/assets/2b2b4ed9-69f2-446a-924d-909d666a2d89',
     isNew: true,
   },
   {
