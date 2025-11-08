@@ -43,13 +43,13 @@ const { isDark, toggleDarkMode } = useDarkMode();
 
 // SEO
 useSeoMeta({
-  title: 'Pejoal - Mobile App Developer & Language Learning Expert',
-  ogTitle: 'Pejoal - Mobile App Developer & Language Learning Expert',
+  title: 'Pejoal Hanna - Full Stack Developer',
+  ogTitle: 'Pejoal Hanna - Full Stack Developer',
   description:
-    'Professional mobile app developer specializing in educational apps. Creator of language learning apps for German, English, Spanish, Italian and more.',
+    'Professional full-stack developer specializing in cross-platform mobile applications and web systems/apps. Experienced in CSS, React Native, Expo, PHP, Laravel, MongoDB, MariaDB/MySQL, and Node.js with published apps on major app stores.',
   ogDescription:
-    'Professional mobile app developer specializing in educational apps. Creator of language learning apps for German, English, Spanish, Italian and more.',
-  ogImage: '/og-image.png',
+    'Professional full-stack developer specializing in cross-platform mobile applications and web systems/apps. Experienced in CSS, React Native, Expo, PHP, Laravel, MongoDB, MariaDB/MySQL, and Node.js with published apps on major app stores.',
+  // ogImage: '/og-image.png',
   twitterCard: 'summary_large_image',
 });
 </script>
