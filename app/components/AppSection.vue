@@ -1,31 +1,58 @@
 <template>
-  <div class="mb-12">
-    <!-- Section Header -->
-    <div class="flex items-center mb-6">
-      <div :class="`w-12 h-12 rounded-2xl flex items-center justify-center mr-4 ${getColorClasses(color).bg}`">
-        <span class="text-2xl">{{ getIcon(title) }}</span>
+  <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-6">About Me</h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          I'm a passionate software developer with a strong focus on mobile experiences. While I specialize in creating
+          accessible and enjoyable educational apps, particularly for language learning, I also build a diverse range of
+          utility apps, quizzes, and games.
+        </p>
       </div>
-      <div class="flex-1">
-        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-1">{{ title }}</h3>
-        <p class="text-gray-600 dark:text-gray-300">{{ description }}</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1: Mobile Development -->
+        <div
+          class="text-center p-6 bg-linear-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl"
+        >
+          <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <Icon name="heroicons:device-phone-mobile" class="w-8 h-8 text-white" />
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Mobile Development</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Expert in React Native and native app development for iOS and Android platforms.
+          </p>
+        </div>
+
+        <!-- Card 2: Language Learning (Updated from original) -->
+        <div
+          class="text-center p-6 bg-linear-to-br from-purple-50 to-violet-50 dark:from-purple-900/20 dark:to-violet-900/20 rounded-2xl"
+        >
+          <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <Icon name="heroicons:language" class="w-8 h-8 text-white" />
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Language Learning</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Specialized in creating comprehensive learning apps for German, English, Spanish, and more.
+          </p>
+        </div>
+
+        <!-- Card 3: Utilities, Quizzes & Games (Updated from original) -->
+        <div
+          class="text-center p-6 bg-linear-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-2xl"
+        >
+          <div class="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <!-- Using puzzle-piece to cover games & quizzes -->
+            <Icon name="heroicons:puzzle-piece" class="w-8 h-8 text-white" />
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Utilities, Quizzes & Games</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Building useful tools like password managers, QR scanners, and engaging trivia & puzzle games.
+          </p>
+        </div>
       </div>
     </div>
-
-    <!-- Apps Grid for vertical layout -->
-    <div v-if="apps.length > 0 && layout === 'grid'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <AppCard v-for="app in apps" :key="app.id" :app="app" :color="color" />
-    </div>
-
-    <!-- Apps Horizontal Scroll for horizontal layout -->
-    <div v-else-if="apps.length > 0" class="flex overflow-x-auto gap-4 pb-4 scrollbar-hide">
-      <AppCard v-for="app in apps" :key="app.id" :app="app" :color="color" :horizontal="true" class="min-w-[280px]" />
-    </div>
-
-    <!-- Empty State -->
-    <div v-else class="text-center py-8">
-      <div class="text-gray-400 text-lg">No apps in this category yet</div>
-    </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
