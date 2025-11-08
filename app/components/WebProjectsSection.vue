@@ -46,7 +46,7 @@
               {{ proj.title }}
             </h3>
 
-            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">{{ proj.description }}</p>
+            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4" v-html="proj.description"></p>
 
             <div class="flex gap-4">
               <a
@@ -80,9 +80,9 @@ const projects = ref([
   {
     title: 'ERP System',
     description:
-      'An ERP system built with Laravel, MariaDB, Vue 3, and modern technologies. **Note: The live site may take up to 1 minute to load on the first visit.** Use test (admin) credentials: (Username: pejoal, Password: password).',
+      'An ERP system built with Laravel, MariaDB, Vue 3, and modern technologies. <br /> <strong>Note:</strong> The live site may take up to 1 minute to load on the first visit. <br /> Use test (admin) credentials: (Username: <strong>pejoal</strong>, Password: <strong>password</strong>).',
     live: 'https://project-manager-tvrw.onrender.com/payroll/dashboard',
-    image: 'https://github.com/user-attachments/assets/2b2b4ed9-69f2-446a-924d-909d666a2d89',
+    image: '/assets/erp.png',
     isNew: true,
   },
   {
