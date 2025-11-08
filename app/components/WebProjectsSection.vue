@@ -1,4 +1,3 @@
-<!-- components/WebProjectsSection.vue -->
 <template>
   <section id="web-projects" class="py-20 px-4 bg-gray-50 dark:bg-gray-900">
     <div class="max-w-7xl mx-auto">
@@ -17,21 +16,21 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
-          v-for="proj in projects"
-          :key="proj.id"
+          v-for="(proj, index) in projects"
+          :key="proj.title"
           class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
           data-aos="zoom-in"
-          :data-aos-delay="proj.delay"
+          :data-aos-delay="(index + 1) * 100"
         >
-          <div
-            class="h-48 bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-900/50 dark:to-purple-900/50 p-6 flex items-center justify-center relative overflow-hidden"
-          >
-            <Icon
-              :name="proj.icon"
-              class="w-20 h-20 text-indigo-600 dark:text-indigo-400 group-hover:scale-110 transition-transform"
+          <div class="h-48 relative overflow-hidden">
+            <!-- Updated to use img tag from new data -->
+            <img
+              :src="proj.image"
+              :alt="proj.title"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
             <div
-              class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition"
+              class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             ></div>
           </div>
           <div class="p-6">
@@ -40,25 +39,24 @@
             >
               {{ proj.title }}
             </h3>
-            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-2">{{ proj.desc }}</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span
-                v-for="tag in proj.tags"
-                class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 text-xs rounded-full font-medium"
-              >
-                {{ tag }}
-              </span>
-            </div>
-            <div class="flex gap-3">
+            <!-- Updated to use proj.description and line-clamp-3 -->
+            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-3">{{ proj.description }}</p>
+
+            <!-- Tags section removed as it's not in the new data -->
+
+            <div class="flex gap-4">
+              <!-- Updated link to proj.liveLink and added v-if -->
               <a
-                :href="proj.live"
+                v-if="proj.liveLink && proj.liveLink !== '#'"
+                :href="proj.liveLink"
                 target="_blank"
                 class="flex items-center gap-1 text-sm font-medium text-blue-600 hover:text-blue-800"
               >
                 <Icon name="heroicons:globe-alt" class="w-4 h-4" /> Live
               </a>
+              <!-- Updated link to proj.link -->
               <a
-                :href="proj.github"
+                :href="proj.link"
                 target="_blank"
                 class="flex items-center gap-1 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white"
               >
@@ -73,36 +71,41 @@
 </template>
 
 <script setup>
-const projects = [
+import { ref } from 'vue';
+
+const projects = ref([
   {
-    id: 1,
-    title: 'TaskFlow Pro',
-    desc: 'Advanced project management dashboard with real-time collaboration',
-    icon: 'heroicons:chart-bar',
-    tags: ['Vue 3', 'Pinia', 'Laravel API'],
-    live: 'https://taskflow.pejoal.com',
-    github: 'https://github.com/pejoal/taskflow',
-    delay: 100,
+    title: 'E-Commerce',
+    description:
+      'This is an E-commerce project developed using Vue.js and Laravel. It features a user-friendly interface with a responsive design that works well on both desktop and mobile devices. The application includes user authentication, product listing, shopping cart functionality, and secure payment processing. It also has an admin panel for managing products, orders, and users.',
+    link: 'https://github.com/Pejoal/ecommerce',
+    liveLink: '#',
+    // Assuming 'assets' is in your 'public' folder
+    image: '/assets/Screenshot2.png',
   },
   {
-    id: 2,
-    title: 'ShopSwift',
-    desc: 'E-commerce platform with Stripe & inventory sync',
-    icon: 'heroicons:shopping-cart',
-    tags: ['Nuxt 3', 'Tailwind', 'Node.js'],
-    live: 'https://shopswift.pejoal.com',
-    github: 'https://github.com/pejoal/shopswift',
-    delay: 200,
+    title: 'Appointments App',
+    description:
+      'This app was designed to streamline appointment scheduling and coordination for a driving school. It aimed to enhance efficiency and provide a seamless experience for both instructors and students.',
+    link: 'https://github.com/Pejoal/Termin',
+    liveLink: '#',
+    image: '/assets/appointments.png',
   },
   {
-    id: 3,
-    title: 'LearnHub',
-    desc: 'Online course platform with video streaming & quizzes',
-    icon: 'heroicons:academic-cap',
-    tags: ['React', 'Firebase', 'Stripe'],
-    live: 'https://learnhub.pejoal.com',
-    github: 'https://github.com/pejoal/learnhub',
-    delay: 300,
+    title: 'Cards Game',
+    description:
+      'A multiplayer card game with features such as card deck management (shuffling, dealing, etc.), animations for card movements, responsive design for different devices, and real-time playing. Developed using Laravel, Inertia, Vue 3, TailwindCSS, Docker, and MySQL.',
+    link: 'https://github.com/Pejoal/Game',
+    liveLink: '#',
+    image: '/assets/game1.png',
   },
-];
+  {
+    title: 'Social Media App',
+    description:
+      'A social media application developed using Vue.js and Laravel. The app includes features like user authentication, real-time chat, post creation and management, likes, comments, and a friend system. It also includes a responsive design for both desktop and mobile devices.',
+    link: 'https://github.com/Pejoal/Social-Media-Platform',
+    liveLink: '#',
+    image: '/assets/social_media_logo.png',
+  },
+]);
 </script>
