@@ -12,5 +12,3 @@ This directory contains the following image assets for the portfolio:
 ## Documents
 
 - Pejoal_CV.pdf - Professional CV/Resume
-
-Note: Add your actual project screenshots and CV to this directory to replace the placeholders.
