@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   css: ['./app/assets/css/main.css'],
   vite: {
     plugins: [tailwindcss()],
+    css: {
+      devSourcemap: false,
+    },
   },
 
   // Enable static site generation for GitHub Pages
