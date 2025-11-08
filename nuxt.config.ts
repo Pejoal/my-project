@@ -19,7 +19,7 @@ export default defineNuxtConfig({
 
   // Configure for GitHub Pages deployment
   app: {
-    baseURL: '/',
+    baseURL: '/my-project/',
     buildAssetsDir: '/_nuxt/',
     head: {
       script: [
