@@ -19,8 +19,8 @@
         <section>
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">1. Acceptance of Terms</h2>
           <p class="dark:text-gray-300">
-            By using any app or website created by <strong>Pejoal Hanna</strong> (the "Services"), you agree to these
-            Terms, <em>unless a specific app provides its own terms</em>.
+            By using any app or website created by <strong>Pejoal Dev Studio</strong> (the "Services"), you agree to
+            these Terms, <em>unless a specific app provides its own terms</em>.
           </p>
         </section>
 
@@ -38,8 +38,8 @@
         <section>
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">3. Intellectual Property</h2>
           <p class="dark:text-gray-300">
-            All content, code, and designs are owned by <strong>Pejoal Hanna</strong> and protected by copyright. You
-            may not copy, modify, or distribute without permission.
+            All content, code, and designs are owned by <strong>Pejoal Dev Studio</strong> and protected by copyright.
+            You may not copy, modify, or distribute without permission.
           </p>
         </section>
 
@@ -78,7 +78,8 @@
         <section>
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">6. Limitation of Liability</h2>
           <p class="dark:text-gray-300">
-            To the fullest extent permitted by law, Pejoal Hanna is not liable for any damages from use of the Services.
+            To the fullest extent permitted by law, <strong>Pejoal Dev Studio</strong> is not liable for any damages
+            from use of the Services.
           </p>
         </section>
 
@@ -95,7 +96,7 @@
         <section>
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">9. Contact</h2>
           <p class="dark:text-gray-300">
-            Questions? Email:
+            Questions? Contact <strong>Pejoal Dev Studio</strong> at:<br />
             <a href="mailto:pejoal.business@gmail.com" class="text-blue-600 hover:underline font-medium">
               pejoal.business@gmail.com
             </a>
@@ -117,8 +118,8 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Terms and Conditions - Pejoal Hanna',
-  description: 'Flexible terms for Pejoal Hanna apps and portfolio. Per-app overrides allowed.',
+  title: 'Terms and Conditions - Pejoal Dev Studio',
+  description: 'Legal terms for Pejoal Dev Studio apps and portfolio. Per-app overrides allowed.',
   robots: 'noindex',
 });
 </script>

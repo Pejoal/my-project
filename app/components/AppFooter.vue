@@ -29,7 +29,7 @@
       </div>
 
       <p class="text-xs text-gray-500 dark:text-gray-400">
-        © {{ new Date().getFullYear() }} Pejoal Hanna. All rights reserved.
+        © {{ new Date().getFullYear() }} Pejoal Hanna @ Pejoal Dev Studio. All rights reserved.
       </p>
     </div>
   </footer>

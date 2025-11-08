@@ -14,8 +14,9 @@
 
       <div class="max-w-none space-y-7 prose prose-lg dark:prose-invert">
         <p class="dark:text-gray-300">
-          This Privacy Policy applies to <strong>all apps</strong> developed by <strong>Pejoal Hanna</strong> ("we",
-          "us", "our"), <em>unless a specific app explicitly states otherwise in its description or in-app notice</em>.
+          This Privacy Policy applies to <strong>all apps</strong> developed by
+          <strong>Pejoal Dev Studio</strong> ("we", "us", "our"),
+          <em>unless a specific app explicitly states otherwise in its description or in-app notice</em>.
         </p>
 
         <!-- 1. Personal Data -->
@@ -92,7 +93,7 @@
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">6. Contact</h2>
           <p class="dark:text-gray-300">
             Have questions about this policy or a specific app?<br />
-            Contact us at:
+            Contact <strong>Pejoal Dev Studio</strong> at:
             <a href="mailto:pejoal.business@gmail.com" class="text-blue-600 hover:underline font-medium">
               pejoal.business@gmail.com
             </a>
@@ -100,7 +101,6 @@
         </section>
       </div>
 
-      <!-- Footer CTA -->
       <div class="mt-10 pb-4 text-center">
         <NuxtLink
           to="/terms"
@@ -115,7 +115,7 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Privacy Policy - Pejoal Hanna',
+  title: 'Privacy Policy - Pejoal Dev Studio',
   description: 'No data collection by default. Fully offline. Safe for all ages. Flexible per-app disclosures.',
 });
 </script>
