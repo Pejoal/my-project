@@ -23,7 +23,13 @@
           :data-aos-delay="(index + 1) * 100"
         >
           <div class="h-48 relative overflow-hidden">
-            <!-- Updated to use img tag from new data -->
+            <span
+              v-if="proj.isNew"
+              class="absolute top-3 right-3 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md"
+            >
+              NEW
+            </span>
+
             <img
               :src="proj.image"
               :alt="proj.title"
@@ -39,24 +45,21 @@
             >
               {{ proj.title }}
             </h3>
-            <!-- Updated to use proj.description and line-clamp-3 -->
-            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-3">{{ proj.description }}</p>
 
-            <!-- Tags section removed as it's not in the new data -->
+            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">{{ proj.description }}</p>
 
             <div class="flex gap-4">
-              <!-- Updated link to proj.liveLink and added v-if -->
               <a
-                v-if="proj.liveLink && proj.liveLink !== '#'"
-                :href="proj.liveLink"
+                v-if="proj.live"
+                :href="proj.live"
                 target="_blank"
                 class="flex items-center gap-1 text-sm font-medium text-blue-600 hover:text-blue-800"
               >
                 <Icon name="heroicons:globe-alt" class="w-4 h-4" /> Live
               </a>
-              <!-- Updated link to proj.link -->
               <a
-                :href="proj.link"
+                v-if="proj.github"
+                :href="proj.github"
                 target="_blank"
                 class="flex items-center gap-1 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white"
               >
@@ -75,36 +78,39 @@ import { ref } from 'vue';
 
 const projects = ref([
   {
+    title: 'ERP System',
+    description:
+      'An ERP system built with Laravel, MariaDB, Vue 3, and modern technologies. **Note: The live site may take up to 1 minute to load on the first visit.** Use test (admin) credentials: (Username: pejoal, Password: password).',
+    live: 'https://project-manager-tvrw.onrender.com/payroll/dashboard',
+    image: '/assets/erp.png',
+    isNew: true,
+  },
+  {
     title: 'E-Commerce',
     description:
       'This is an E-commerce project developed using Vue.js and Laravel. It features a user-friendly interface with a responsive design that works well on both desktop and mobile devices. The application includes user authentication, product listing, shopping cart functionality, and secure payment processing. It also has an admin panel for managing products, orders, and users.',
-    link: 'https://github.com/Pejoal/ecommerce',
-    liveLink: '#',
-    // Assuming 'assets' is in your 'public' folder
+    github: 'https://github.com/Pejoal/ecommerce',
     image: '/assets/Screenshot2.png',
   },
   {
     title: 'Appointments App',
     description:
       'This app was designed to streamline appointment scheduling and coordination for a driving school. It aimed to enhance efficiency and provide a seamless experience for both instructors and students.',
-    link: 'https://github.com/Pejoal/Termin',
-    liveLink: '#',
+    github: 'https://github.com/Pejoal/Termin',
     image: '/assets/appointments.png',
   },
   {
     title: 'Cards Game',
     description:
       'A multiplayer card game with features such as card deck management (shuffling, dealing, etc.), animations for card movements, responsive design for different devices, and real-time playing. Developed using Laravel, Inertia, Vue 3, TailwindCSS, Docker, and MySQL.',
-    link: 'https://github.com/Pejoal/Game',
-    liveLink: '#',
+    github: 'https://github.com/Pejoal/Game',
     image: '/assets/game1.png',
   },
   {
     title: 'Social Media App',
     description:
       'A social media application developed using Vue.js and Laravel. The app includes features like user authentication, real-time chat, post creation and management, likes, comments, and a friend system. It also includes a responsive design for both desktop and mobile devices.',
-    link: 'https://github.com/Pejoal/Social-Media-Platform',
-    liveLink: '#',
+    github: 'https://github.com/Pejoal/Social-Media-Platform',
     image: '/assets/social_media_logo.png',
   },
 ]);
