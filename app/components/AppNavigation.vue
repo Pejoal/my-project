@@ -22,15 +22,7 @@
           >
             {{ link.label }}
           </NuxtLink>
-          <NuxtLink
-            v-for="link in siteLinks"
-            :key="link.to"
-            :to="link.to"
-            class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
-            active-class="text-blue-600 dark:text-blue-400 font-bold"
-          >
-            {{ link.label }}
-          </NuxtLink>
+
           <ClientOnly>
             <button
               @click="$emit('toggle-dark-mode')"
@@ -151,11 +143,6 @@ const navLinks = [
   { label: 'Apps', to: '#apps' },
   { label: 'Web Projects', to: '#web-projects' },
   { label: 'Contact', to: '#contact' },
-];
-
-const siteLinks = [
-  { label: 'Privacy Policy', to: '/privacy-policy' },
-  { label: 'Terms of Service', to: '/terms' },
 ];
 
 const scrollToSection = (to) => {

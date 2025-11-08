@@ -1,4 +1,7 @@
 <template>
+  <!-- Navigation -->
+  <AppNavigation :is-dark="isDark" @toggle-dark-mode="toggleDarkMode" />
+
   <HeroSection />
 
   <AboutSection />
@@ -22,7 +25,10 @@
 <script setup>
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useAppData } from '~/composables/useApp';
+import { useAppData, useDarkMode } from '~/composables/useApp';
+
+const { isDark, toggleDarkMode } = useDarkMode();
+
 onMounted(() => {
   AOS.init({
     duration: 800,

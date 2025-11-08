@@ -4,9 +4,6 @@
   >
     <NuxtRouteAnnouncer />
 
-    <!-- Navigation -->
-    <AppNavigation :is-dark="isDark" @toggle-dark-mode="toggleDarkMode" />
-
     <NuxtPage />
 
     <ContactSection />
@@ -16,8 +13,4 @@
   </div>
 </template>
 
-<script setup>
-import { useDarkMode } from '~/composables/useApp';
-
-const { isDark, toggleDarkMode } = useDarkMode();
-</script>
+<script setup></script>
