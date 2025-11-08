@@ -1,51 +1,68 @@
-<!-- components/SkillsSection.vue -->
 <template>
   <section class="py-20 px-4 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
     <div class="max-w-7xl mx-auto">
-      <!-- Section Title -->
+      <!-- Header -->
       <div class="text-center mb-16" data-aos="fade-up">
         <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">Skills & Expertise</h2>
-        <p class="text-xl text-gray-600 dark:text-gray-300">Technical mastery and human-centered soft skills</p>
+        <p class="text-xl text-gray-600 dark:text-gray-300">Full-stack, DevOps, and human-centered soft skills</p>
       </div>
 
-      <!-- Technical Skills -->
-      <div class="mb-20">
-        <h3 class="text-2xl font-bold text-gray-800 dark:text-white text-center mb-10" data-aos="fade-up">
-          Technical Skills
-        </h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <div
-            v-for="(skill, i) in technicalSkills"
-            :key="skill.name"
-            class="space-y-3"
-            data-aos="fade-right"
-            :data-aos-delay="i * 80"
-          >
-            <div class="flex justify-between items-center">
-              <div class="flex items-center gap-3">
-                <div
-                  class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-lg"
-                >
-                  <Icon :name="skill.icon" class="w-6 h-6 text-white" />
-                </div>
-                <span class="font-semibold text-lg text-gray-800 dark:text-white">{{ skill.name }}</span>
-              </div>
-              <span class="text-sm font-bold text-blue-600 dark:text-blue-400">{{ skill.level }}%</span>
-            </div>
-            <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-              <div
-                ref="techProgress"
-                class="h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transition-all duration-1500 ease-out"
-                :style="{ width: '0%' }"
-              ></div>
-            </div>
-          </div>
-        </div>
+      <!-- ==================== TECHNICAL SKILLS ==================== -->
+      <div class="space-y-16 mb-20">
+        <!-- Frontend -->
+        <SkillCategory
+          title="Frontend"
+          icon="heroicons:code-bracket"
+          color="from-blue-500 to-cyan-500"
+          :skills="frontendSkills"
+          :progress-ref="frontendProgress"
+          data-aos="fade-right"
+        />
+
+        <!-- Mobile -->
+        <SkillCategory
+          title="Mobile"
+          icon="heroicons:device-phone-mobile"
+          color="from-indigo-500 to-purple-500"
+          :skills="mobileSkills"
+          :progress-ref="mobileProgress"
+          data-aos="fade-left"
+        />
+
+        <!-- Backend -->
+        <SkillCategory
+          title="Backend"
+          icon="heroicons:server"
+          color="from-green-500 to-emerald-500"
+          :skills="backendSkills"
+          :progress-ref="backendProgress"
+          data-aos="fade-right"
+        />
+
+        <!-- Database & DevOps -->
+        <SkillCategory
+          title="Database & DevOps"
+          icon="heroicons:cog-6-tooth"
+          color="from-orange-500 to-red-500"
+          :skills="dbDevOpsSkills"
+          :progress-ref="dbDevOpsProgress"
+          data-aos="fade-left"
+        />
+
+        <!-- Testing & Tools -->
+        <SkillCategory
+          title="Testing & Tools"
+          icon="heroicons:beaker"
+          color="from-pink-500 to-rose-500"
+          :skills="testingToolsSkills"
+          :progress-ref="testingToolsProgress"
+          data-aos="fade-right"
+        />
       </div>
 
-      <!-- Soft Skills -->
+      <!-- ==================== SOFT SKILLS ==================== -->
       <div>
-        <h3 class="text-2xl font-bold text-gray-800 dark:text-white text-center mb-10" data-aos="fade-up">
+        <h3 class="text-2xl font-bold text-center text-gray-800 dark:text-white mb-10" data-aos="fade-up">
           Soft Skills
         </h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -81,19 +98,66 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 
-// Technical Skills
-const technicalSkills = [
-  { name: 'React Native', level: 95, icon: 'simple-icons:react' },
-  { name: 'Expo', level: 92, icon: 'simple-icons:expo' },
-  { name: 'Nuxt.js / Vue', level: 88, icon: 'simple-icons:nuxtdotjs' },
-  { name: 'Laravel / PHP', level: 85, icon: 'simple-icons:laravel' },
-  { name: 'Node.js', level: 82, icon: 'simple-icons:nodedotjs' },
-  { name: 'MongoDB', level: 87, icon: 'simple-icons:mongodb' },
+// ──────────────────────────────────────
+// 1. Frontend
+// ──────────────────────────────────────
+const frontendSkills = [
+  { name: 'Vue / Nuxt.js', level: 88, icon: 'simple-icons:nuxtdotjs' },
+  { name: 'React', level: 92, icon: 'simple-icons:react' },
+  { name: 'Next.js', level: 85, icon: 'simple-icons:nextdotjs' },
   { name: 'Tailwind CSS', level: 96, icon: 'simple-icons:tailwindcss' },
-  { name: 'Git & GitHub', level: 93, icon: 'simple-icons:git' },
+  { name: 'HTML / CSS / JS', level: 98, icon: 'simple-icons:html5' },
+  { name: 'TypeScript', level: 87, icon: 'simple-icons:typescript' },
 ];
 
+// ──────────────────────────────────────
+// 2. Mobile
+// ──────────────────────────────────────
+const mobileSkills = [
+  { name: 'React Native', level: 95, icon: 'simple-icons:react' },
+  { name: 'Expo', level: 92, icon: 'simple-icons:expo' },
+  { name: 'Flutter (Basic)', level: 65, icon: 'simple-icons:flutter' },
+];
+
+// ──────────────────────────────────────
+// 3. Backend
+// ──────────────────────────────────────
+const backendSkills = [
+  { name: 'Laravel / PHP', level: 85, icon: 'simple-icons:laravel' },
+  { name: 'Node.js', level: 82, icon: 'simple-icons:nodedotjs' },
+  { name: 'Express.js', level: 84, icon: 'simple-icons:express' },
+  { name: 'GraphQL', level: 78, icon: 'simple-icons:graphql' },
+  { name: 'REST APIs', level: 90, icon: 'heroicons:globe-alt' },
+];
+
+// ──────────────────────────────────────
+// 4. Database & DevOps
+// ──────────────────────────────────────
+const dbDevOpsSkills = [
+  { name: 'MongoDB', level: 87, icon: 'simple-icons:mongodb' },
+  { name: 'MySQL / MariaDB', level: 90, icon: 'simple-icons:mysql' },
+  { name: 'PostgreSQL', level: 80, icon: 'simple-icons:postgresql' },
+  { name: 'Redis', level: 75, icon: 'simple-icons:redis' },
+  { name: 'Docker', level: 88, icon: 'simple-icons:docker' },
+  { name: 'Docker Compose', level: 86, icon: 'simple-icons:docker' },
+  { name: 'CI/CD (GitHub Actions)', level: 82, icon: 'simple-icons:githubactions' },
+  { name: 'AWS (EC2, S3)', level: 70, icon: 'simple-icons:amazonaws' },
+];
+
+// ──────────────────────────────────────
+// 5. Testing & Tools
+// ──────────────────────────────────────
+const testingToolsSkills = [
+  { name: 'Jest', level: 85, icon: 'simple-icons:jest' },
+  { name: 'Cypress', level: 78, icon: 'simple-icons:cypress' },
+  { name: 'Git & GitHub', level: 93, icon: 'simple-icons:git' },
+  { name: 'Figma', level: 80, icon: 'simple-icons:figma' },
+  { name: 'Postman', level: 90, icon: 'simple-icons:postman' },
+];
+
+// ──────────────────────────────────────
 // Soft Skills
+// ──────────────────────────────────────
 const softSkills = [
   { name: 'Problem Solving', level: 94, desc: 'Breaking down complex challenges', icon: 'heroicons:puzzle-piece' },
   {
@@ -113,24 +177,33 @@ const softSkills = [
   { name: 'Creativity', level: 87, desc: 'Innovative UX & feature ideas', icon: 'heroicons:light-bulb' },
 ];
 
-// Refs for progress bars
-const techProgress = ref([]);
+// ──────────────────────────────────────
+// Progress Refs
+// ──────────────────────────────────────
+const frontendProgress = ref([]);
+const mobileProgress = ref([]);
+const backendProgress = ref([]);
+const dbDevOpsProgress = ref([]);
+const testingToolsProgress = ref([]);
 const softProgress = ref([]);
 
-// Animate progress bars on mount
+// ──────────────────────────────────────
+// Animate on Mount
+// ──────────────────────────────────────
 onMounted(() => {
-  // Technical
-  setTimeout(() => {
-    techProgress.value.forEach((el, i) => {
-      if (el) el.style.width = `${technicalSkills[i].level}%`;
-    });
-  }, 300);
+  const animate = (refs, skills, delay) => {
+    setTimeout(() => {
+      refs.value.forEach((el, i) => {
+        if (el && skills[i]) el.style.width = `${skills[i].level}%`;
+      });
+    }, delay);
+  };
 
-  // Soft
-  setTimeout(() => {
-    softProgress.value.forEach((el, i) => {
-      if (el) el.style.width = `${softSkills[i].level}%`;
-    });
-  }, 500);
+  animate(frontendProgress, frontendSkills, 300);
+  animate(mobileProgress, mobileSkills, 400);
+  animate(backendProgress, backendSkills, 500);
+  animate(dbDevOpsProgress, dbDevOpsSkills, 600);
+  animate(testingToolsProgress, testingToolsSkills, 700);
+  animate(softProgress, softSkills, 800);
 });
 </script>
