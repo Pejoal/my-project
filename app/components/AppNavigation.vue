@@ -27,6 +27,7 @@
             <button
               @click="$emit('toggle-dark-mode')"
               class="p-2 cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+              aria-label="Toggle dark mode"
             >
               <svg
                 v-if="isDark"
@@ -62,12 +63,37 @@
           </ClientOnly>
         </div>
 
-        <button @click="mobileOpen = !mobileOpen" class="md:hidden p-2">
-          <Icon :name="mobileOpen ? 'heroicons:x-mark' : 'heroicons:bars-3'" class="w-6 h-6" />
+        <!-- NEW: Animated Hamburger Button -->
+        <button
+          @click="mobileOpen = !mobileOpen"
+          class="md:hidden p-2 w-10 h-10 relative focus:outline-none z-50"
+          aria-label="Toggle menu"
+        >
+          <div class="w-6 h-6 relative flex items-center justify-center">
+            <!-- Top bar -->
+            <span
+              aria-hidden="true"
+              class="block absolute h-0.5 w-6 bg-gray-900 dark:bg-gray-100 transform transition duration-300 ease-in-out"
+              :class="{ 'rotate-45': mobileOpen, 'top-0': !mobileOpen, 'top-1/2 -translate-y-1/2': mobileOpen }"
+            ></span>
+            <!-- Middle bar -->
+            <span
+              aria-hidden="true"
+              class="block absolute h-0.5 w-6 bg-gray-900 dark:bg-gray-100 transform transition duration-300 ease-in-out top-1/2 -translate-y-1/2"
+              :class="{ 'opacity-0': mobileOpen }"
+            ></span>
+            <!-- Bottom bar -->
+            <span
+              aria-hidden="true"
+              class="block absolute h-0.5 w-6 bg-gray-900 dark:bg-gray-100 transform transition duration-300 ease-in-out"
+              :class="{ '-rotate-45': mobileOpen, 'bottom-0': !mobileOpen, 'top-1/2 -translate-y-1/2': mobileOpen }"
+            ></span>
+          </div>
         </button>
       </div>
     </div>
 
+    <!-- Mobile Menu -->
     <div v-if="mobileOpen" class="md:hidden border-t border-gray-200 dark:border-gray-700">
       <div class="px-4 py-3 space-y-2">
         <NuxtLink
