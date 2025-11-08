@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 px-4 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+  <section id="skills" class="py-20 px-4 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
     <div class="max-w-7xl mx-auto">
       <!-- Header -->
       <div class="text-center mb-16" data-aos="fade-up">

@@ -25,7 +25,7 @@
           <ClientOnly>
             <button
               @click="$emit('toggle-dark-mode')"
-              class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+              class="p-2 cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
             >
               <svg
                 v-if="isDark"
@@ -87,7 +87,7 @@
               $emit('toggle-dark-mode');
               mobileOpen = false;
             "
-            class="w-full text-left py-2 flex items-center gap-2 text-gray-700 dark:text-gray-300"
+            class="w-full cursor-pointer text-left py-2 flex items-center gap-2 text-gray-700 dark:text-gray-300"
           >
             <svg
               v-if="isDark"
@@ -136,7 +136,7 @@ defineEmits(['toggle-dark-mode']);
 const mobileOpen = ref(false);
 
 const navLinks = [
-  { label: 'Home', to: '/' },
+  { label: 'Home', to: '#home' },
   { label: 'About', to: '#about' },
   { label: 'Skills', to: '#skills' },
   { label: 'Apps', to: '#apps' },
