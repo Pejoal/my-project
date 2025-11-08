@@ -4,7 +4,7 @@
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
-        <NuxtLink to="/" class="flex items-center gap-2">
+        <NuxtLink to="#home" class="flex items-center gap-2">
           <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
             <span class="text-white font-bold text-sm">P</span>
           </div>
