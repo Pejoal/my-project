@@ -12,39 +12,96 @@
       <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-6">Privacy Policy</h1>
       <p class="text-sm text-gray-500 dark:text-gray-400 mb-8">Last updated: November 08, 2025</p>
 
-      <div class="max-w-none">
+      <div class="max-w-none space-y-7 prose prose-lg dark:prose-invert">
         <p class="dark:text-gray-300">
-          At <strong>Pejoal Dev Studio</strong>, we respect your privacy. This policy explains how we collect, use, and
-          protect your information when you use our apps and website.
+          This Privacy Policy applies to <strong>all apps</strong> developed by <strong>Pejoal Hanna</strong> ("we",
+          "us", "our"), <em>unless a specific app explicitly states otherwise in its description or in-app notice</em>.
         </p>
 
-        <h2 class="dark:text-white">1. Information We Collect</h2>
-        <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
-          <li><strong>Personal Data:</strong> Name, email (only if you contact us).</li>
-          <li><strong>Usage Data:</strong> App crashes, analytics (anonymized via Firebase/Expo).</li>
-          <li><strong>No Ads or Tracking:</strong> We do not use third-party ads or sell data.</li>
-        </ul>
+        <!-- 1. Personal Data -->
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">1. Personal Data</h2>
+          <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+            <li>
+              <strong>No personal data is collected, stored, or shared</strong> —
+              <em>unless explicitly stated otherwise in the app</em>.
+            </li>
+            <li>
+              <strong>No login or registration is required</strong> — <em>unless explicitly mentioned in the app</em>.
+            </li>
+            <li>
+              We do <strong>not collect</strong> names, email addresses, device IDs, or any unique identifiers —
+              <em>unless clearly disclosed in the app</em>.
+            </li>
+            <li>
+              User activity is <strong>not tracked or monitored</strong> —
+              <em>unless explicitly enabled and explained in the app</em>.
+            </li>
+          </ul>
+        </section>
 
-        <h2 class="dark:text-white">2. How We Use Your Data</h2>
-        <p class="dark:text-gray-300">To improve app performance, fix bugs, and respond to support requests.</p>
+        <!-- 2. Internet Access -->
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">2. Internet Access</h2>
+          <p class="dark:text-gray-300">
+            Our apps work <strong>entirely offline</strong> and <strong>do not connect to the internet</strong> or any
+            external servers — <em>unless explicitly stated otherwise in the app description</em>.
+          </p>
+        </section>
 
-        <h2 class="dark:text-white">3. Data Storage</h2>
-        <p class="dark:text-gray-300">Stored securely on encrypted servers. Retained only as needed.</p>
+        <!-- 3. Permissions -->
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">3. Permissions</h2>
+          <p class="dark:text-gray-300">
+            Our apps <strong>do not request access</strong> to sensitive device features such as:
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 ml-6">
+            <li>Camera</li>
+            <li>Microphone</li>
+            <li>Location</li>
+            <li>Contacts</li>
+            <li>Storage</li>
+          </ul>
+          <p class="dark:text-gray-300 mt-3 text-sm italic">
+            <em>— unless explicitly required and clearly explained within the app.</em>
+          </p>
+        </section>
 
-        <h2 class="dark:text-white">4. Your Rights</h2>
-        <p class="dark:text-gray-300">
-          You can request data deletion by emailing:
-          <a href="mailto:pejoal.business@gmail.com" class="text-blue-600">pejoal.business@gmail.com</a>
-        </p>
+        <!-- 4. Ads & Analytics -->
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">4. Ads and Analytics</h2>
+          <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+            <li>Our apps show <strong>no advertisements</strong> — <em>unless explicitly stated</em>.</li>
+            <li>We <strong>do not use analytics or tracking tools</strong> — <em>unless disclosed in the app</em>.</li>
+            <li>No third-party services are integrated that collect user data — <em>unless clearly mentioned</em>.</li>
+          </ul>
+        </section>
 
-        <h2 class="dark:text-white">5. Contact</h2>
-        <p class="dark:text-gray-300">
-          Email: <a href="mailto:pejoal.business@gmail.com" class="text-blue-600">pejoal.business@gmail.com</a>
-        </p>
+        <!-- 5. Children -->
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">5. Children</h2>
+          <p class="dark:text-gray-300">
+            Our apps are designed to be safe for all ages, including children under 13. Since
+            <strong>no personal data is collected by default</strong>, no parental consent is required —
+            <em>unless an app explicitly collects data and states otherwise</em>.
+          </p>
+        </section>
+
+        <!-- 6. Contact -->
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">6. Contact</h2>
+          <p class="dark:text-gray-300">
+            Have questions about this policy or a specific app?<br />
+            Contact us at:
+            <a href="mailto:pejoal.business@gmail.com" class="text-blue-600 hover:underline font-medium">
+              pejoal.business@gmail.com
+            </a>
+          </p>
+        </section>
       </div>
 
       <!-- Footer CTA -->
-      <div class="mt-16 text-center">
+      <div class="mt-10 pb-4 text-center">
         <NuxtLink
           to="/terms"
           class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
@@ -59,6 +116,6 @@
 <script setup>
 useSeoMeta({
   title: 'Privacy Policy - Pejoal Hanna',
-  description: 'Learn how Pejoal protects your privacy in apps and website.',
+  description: 'No data collection by default. Fully offline. Safe for all ages. Flexible per-app disclosures.',
 });
 </script>
