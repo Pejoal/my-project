@@ -91,6 +91,7 @@ const projects = ref([
       'This is an E-commerce project developed using Vue.js and Laravel. It features a user-friendly interface with a responsive design that works well on both desktop and mobile devices. The application includes user authentication, product listing, shopping cart functionality, and secure payment processing. It also has an admin panel for managing products, orders, and users.',
     github: 'https://github.com/Pejoal/ecommerce',
     image: '/assets/Screenshot2.png',
+    isNew: true,
   },
   {
     title: 'Appointments App',
