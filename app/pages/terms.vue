@@ -1,44 +1,148 @@
-<!-- pages/privacy-policy.vue -->
+<!-- pages/terms.vue -->
 <template>
   <div
     class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 pt-24 px-4"
   >
     <div class="max-w-4xl mx-auto">
-      <NuxtLink to="/" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-8">
+      <!-- Back Link -->
+      <NuxtLink
+        to="/"
+        class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 mb-8 font-medium transition"
+      >
         <Icon name="heroicons:arrow-left" class="w-5 h-5" />
         Back to Portfolio
       </NuxtLink>
 
-      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-6">Privacy Policy</h1>
-      <p class="text-sm text-gray-500 dark:text-gray-400 mb-8">Last updated: November 08, 2025</p>
+      <!-- Title -->
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Terms and Conditions</h1>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">Last updated: <strong>November 08, 2025</strong></p>
 
-      <div class="prose prose-lg dark:prose-invert max-w-none">
-        <p>
-          At <strong>Pejoal</strong>, we respect your privacy. This policy explains how we collect, use, and protect
-          your information when you use our apps and website.
-        </p>
+      <!-- Content -->
+      <div class="prose prose-lg dark:prose-invert max-w-none space-y-8">
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">1. Acceptance of Terms</h2>
+          <p>
+            By accessing and using this website (<strong>pejoal.com</strong>) and any mobile applications created by
+            <strong>Pejoal Hanna</strong> (collectively, the "Services"), you accept and agree to be bound by these
+            Terms and Conditions. If you do not agree, please do not use the Services.
+          </p>
+        </section>
 
-        <h2>1. Information We Collect</h2>
-        <ul>
-          <li><strong>Personal Data:</strong> Name, email (only if you contact us).</li>
-          <li><strong>Usage Data:</strong> App crashes, analytics (anonymized via Firebase/Expo).</li>
-          <li><strong>No Ads or Tracking:</strong> We do not use third-party ads or sell data.</li>
-        </ul>
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">2. Use of Services</h2>
+          <p>
+            You agree to use the Services only for lawful purposes and in accordance with these Terms. You must not:
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
+            <li>Violate any applicable laws or regulations</li>
+            <li>Interfere with or disrupt the Services</li>
+            <li>Attempt to gain unauthorized access to any part of the Services</li>
+            <li>Use automated tools to scrape or extract data</li>
+          </ul>
+        </section>
 
-        <h2>2. How We Use Your Data</h2>
-        <p>To improve app performance, fix bugs, and respond to support requests.</p>
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">3. Intellectual Property</h2>
+          <p>
+            All content on this website and in our apps — including text, graphics, logos, code, and designs — is owned
+            by <strong>Pejoal Hanna</strong> and protected by copyright, trademark, and other intellectual property
+            laws.
+          </p>
+          <p>You may not reproduce, modify, distribute, or create derivative works without prior written consent.</p>
+        </section>
 
-        <h2>3. Data Storage</h2>
-        <p>Stored securely on encrypted servers. Retained only as needed.</p>
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">4. User Content</h2>
+          <p>
+            You retain ownership of any content you submit (e.g., feedback, reviews). By submitting, you grant Pejoal
+            Hanna a worldwide, royalty-free, perpetual license to use, display, and distribute such content for
+            improving the Services.
+          </p>
+        </section>
 
-        <h2>4. Your Rights</h2>
-        <p>
-          You can request data deletion by emailing:
-          <a href="mailto:privacy@pejoal.com" class="text-blue-600">privacy@pejoal.com</a>
-        </p>
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">5. Mobile Applications</h2>
+          <p>Our apps are available on:</p>
+          <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
+            <li>
+              <strong>Apple App Store</strong>: Subject to
+              <a
+                href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >Apple's EULA</a
+              >
+            </li>
+            <li>
+              <strong>Google Play Store</strong>: Subject to
+              <a href="https://play.google.com/about/play-terms/" target="_blank" class="text-blue-600 hover:underline"
+                >Google Play Terms</a
+              >
+            </li>
+          </ul>
+          <p>
+            We do not collect personal data beyond what is necessary for app functionality and analytics (anonymized via
+            Expo/Firebase).
+          </p>
+        </section>
 
-        <h2>5. Contact</h2>
-        <p>Email: <a href="mailto:contact@pejoal.com" class="text-blue-600">contact@pejoal.com</a></p>
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">6. Disclaimer of Warranties</h2>
+          <p>
+            The Services are provided "as is" and "as available" without warranties of any kind, express or implied. We
+            do not guarantee that the Services will be error-free, secure, or always available.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">7. Limitation of Liability</h2>
+          <p>
+            To the fullest extent permitted by law, Pejoal Hanna shall not be liable for any indirect, incidental,
+            special, or consequential damages arising from your use of the Services.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">8. Third-Party Links</h2>
+          <p>
+            The Services may contain links to third-party websites (e.g., App Store, GitHub). We are not responsible for
+            the content or practices of these sites.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">9. Changes to Terms</h2>
+          <p>
+            We may update these Terms at any time. Changes will be posted here with an updated "Last updated" date.
+            Continued use of the Services after changes constitutes acceptance.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">10. Governing Law</h2>
+          <p>
+            These Terms are governed by the laws of <strong>Germany</strong>, without regard to conflict of law
+            principles.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">11. Contact Information</h2>
+          <p>
+            For questions about these Terms, contact us at:<br />
+            <a href="mailto:legal@pejoal.com" class="text-blue-600 hover:underline">legal@pejoal.com</a>
+          </p>
+        </section>
+      </div>
+
+      <!-- Footer CTA -->
+      <div class="mt-16 text-center">
+        <NuxtLink
+          to="/privacy-policy"
+          class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
+        >
+          ← View Privacy Policy
+        </NuxtLink>
       </div>
     </div>
   </div>
@@ -46,7 +150,10 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Privacy Policy - Pejoal Hanna',
-  description: 'Learn how Pejoal protects your privacy in apps and website.',
+  title: 'Terms and Conditions - Pejoal Hanna',
+  description: "Legal terms governing the use of Pejoal Hanna's portfolio and mobile applications.",
+  robots: 'noindex',
 });
 </script>
+
+<style scoped></style>

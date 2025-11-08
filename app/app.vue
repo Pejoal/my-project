@@ -7,6 +7,8 @@
     <!-- Navigation -->
     <AppNavigation :is-dark="isDark" @toggle-dark-mode="toggleDarkMode" />
 
+    <NuxtPage />
+
     <ContactSection />
 
     <!-- Footer -->
