@@ -7,7 +7,6 @@
       bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700
       p-6 shadow-lg hover:shadow-2xl
     `"
-    @click="!horizontal ? $emit('click') : null"
   >
     <!-- Horizontal Layout -->
     <div v-if="horizontal" class="text-center">

@@ -13,26 +13,12 @@
 
     <!-- Apps Grid for vertical layout -->
     <div v-if="apps.length > 0 && layout === 'grid'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <AppCard
-        v-for="app in apps"
-        :key="app.id"
-        :app="app"
-        :color="color"
-        @click="openAppStore(app.id, app.iosId, app.title)"
-      />
+      <AppCard v-for="app in apps" :key="app.id" :app="app" :color="color" />
     </div>
 
     <!-- Apps Horizontal Scroll for horizontal layout -->
     <div v-else-if="apps.length > 0" class="flex overflow-x-auto gap-4 pb-4 scrollbar-hide">
-      <AppCard
-        v-for="app in apps"
-        :key="app.id"
-        :app="app"
-        :color="color"
-        :horizontal="true"
-        @click="openAppStore(app.id, app.iosId, app.title)"
-        class="min-w-[280px]"
-      />
+      <AppCard v-for="app in apps" :key="app.id" :app="app" :color="color" :horizontal="true" class="min-w-[280px]" />
     </div>
 
     <!-- Empty State -->
@@ -122,19 +108,6 @@ const getColorClasses = (color) => {
     },
   };
   return colors[color] || colors.blue;
-};
-
-const openAppStore = (appId, iosId, appName) => {
-  let storeUrl = 'https://pejoal.github.io/';
-  if (typeof window !== 'undefined') {
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-    if (isIOS && iosId) {
-      storeUrl = `https://apps.apple.com/app/${iosId}`;
-    } else if (appId) {
-      storeUrl = `https://play.google.com/store/apps/details?id=com.pejoal.${appId}`;
-    }
-  }
-  window.open(storeUrl, '_blank');
 };
 </script>
 

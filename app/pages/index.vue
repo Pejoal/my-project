@@ -19,7 +19,6 @@
     :game-apps="gameApps"
   />
   <WebProjectsSection />
-  <ContactSection />
 </template>
 
 <script setup>

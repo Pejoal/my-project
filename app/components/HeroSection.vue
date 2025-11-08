@@ -14,8 +14,9 @@
         </h1>
 
         <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-          Mobile App Developer & Language Learning Expert. I create educational apps that help millions of people learn
-          languages and improve their skills.
+          Professional full-stack developer specializing in cross-platform mobile applications and web systems/apps.
+          Experienced in CSS, React Native, Expo, PHP, Laravel, MongoDB, MariaDB/MySQL, and Node.js with published apps
+          on major app stores.
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
