@@ -6,8 +6,6 @@
 
   <AboutSection />
 
-  <SkillsSection />
-
   <AppsPortfolioSection
     :german-apps="germanApps"
     :english-apps="englishApps"
@@ -18,6 +16,9 @@
     :test-apps="testApps"
     :game-apps="gameApps"
   />
+
+  <SkillsSection />
+
   <WebProjectsSection />
 </template>
 
