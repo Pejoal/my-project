@@ -14,8 +14,8 @@
 
       <div class="prose prose-lg dark:prose-invert max-w-none">
         <p class="dark:text-gray-300">
-          At <strong>Pejoal</strong>, we respect your privacy. This policy explains how we collect, use, and protect
-          your information when you use our apps and website.
+          At <strong>Pejoal Dev Studio</strong>, we respect your privacy. This policy explains how we collect, use, and
+          protect your information when you use our apps and website.
         </p>
 
         <h2 class="dark:text-white">1. Information We Collect</h2>
@@ -34,12 +34,12 @@
         <h2 class="dark:text-white">4. Your Rights</h2>
         <p class="dark:text-gray-300">
           You can request data deletion by emailing:
-          <a href="mailto:privacy@pejoal.com" class="text-blue-600">privacy@pejoal.com</a>
+          <a href="mailto:pejoal.business@gmail.com" class="text-blue-600">pejoal.business@gmail.com</a>
         </p>
 
         <h2 class="dark:text-white">5. Contact</h2>
         <p class="dark:text-gray-300">
-          Email: <a href="mailto:contact@pejoal.com" class="text-blue-600">contact@pejoal.com</a>
+          Email: <a href="mailto:pejoal.business@gmail.com" class="text-blue-600">pejoal.business@gmail.com</a>
         </p>
       </div>
     </div>

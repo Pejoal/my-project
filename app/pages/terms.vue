@@ -130,7 +130,7 @@
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">11. Contact Information</h2>
           <p class="dark:text-gray-300">
             For questions about these Terms, contact us at:<br />
-            <a href="mailto:legal@pejoal.com" class="text-blue-600 hover:underline">legal@pejoal.com</a>
+            <a href="mailto:pejoal.business@gmail.com" class="text-blue-600 hover:underline">pejoal.business@gmail.com</a>
           </p>
         </section>
       </div>
