@@ -66,7 +66,7 @@
         <!-- NEW: Animated Hamburger Button -->
         <button
           @click="mobileOpen = !mobileOpen"
-          class="md:hidden p-2 w-10 h-10 relative focus:outline-none z-50"
+          class="md:hidden cursor-pointer p-2 w-10 h-10 relative focus:outline-none z-50"
           aria-label="Toggle menu"
         >
           <div class="w-6 h-6 relative flex items-center justify-center">
