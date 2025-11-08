@@ -13,32 +13,34 @@
       <p class="text-sm text-gray-500 dark:text-gray-400 mb-8">Last updated: November 08, 2025</p>
 
       <div class="prose prose-lg dark:prose-invert max-w-none">
-        <p>
+        <p class="dark:text-gray-300">
           At <strong>Pejoal</strong>, we respect your privacy. This policy explains how we collect, use, and protect
           your information when you use our apps and website.
         </p>
 
-        <h2>1. Information We Collect</h2>
-        <ul>
+        <h2 class="dark:text-white">1. Information We Collect</h2>
+        <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
           <li><strong>Personal Data:</strong> Name, email (only if you contact us).</li>
           <li><strong>Usage Data:</strong> App crashes, analytics (anonymized via Firebase/Expo).</li>
           <li><strong>No Ads or Tracking:</strong> We do not use third-party ads or sell data.</li>
         </ul>
 
-        <h2>2. How We Use Your Data</h2>
-        <p>To improve app performance, fix bugs, and respond to support requests.</p>
+        <h2 class="dark:text-white">2. How We Use Your Data</h2>
+        <p class="dark:text-gray-300">To improve app performance, fix bugs, and respond to support requests.</p>
 
-        <h2>3. Data Storage</h2>
-        <p>Stored securely on encrypted servers. Retained only as needed.</p>
+        <h2 class="dark:text-white">3. Data Storage</h2>
+        <p class="dark:text-gray-300">Stored securely on encrypted servers. Retained only as needed.</p>
 
-        <h2>4. Your Rights</h2>
-        <p>
+        <h2 class="dark:text-white">4. Your Rights</h2>
+        <p class="dark:text-gray-300">
           You can request data deletion by emailing:
           <a href="mailto:privacy@pejoal.com" class="text-blue-600">privacy@pejoal.com</a>
         </p>
 
-        <h2>5. Contact</h2>
-        <p>Email: <a href="mailto:contact@pejoal.com" class="text-blue-600">contact@pejoal.com</a></p>
+        <h2 class="dark:text-white">5. Contact</h2>
+        <p class="dark:text-gray-300">
+          Email: <a href="mailto:contact@pejoal.com" class="text-blue-600">contact@pejoal.com</a>
+        </p>
       </div>
     </div>
   </div>
