@@ -147,9 +147,33 @@ const navLinks = [
 
 const scrollToSection = (to) => {
   if (to.startsWith('#')) {
-    const el = document.querySelector(to);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const targetId = to.substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      // Calculate offset for fixed navbar (64px height + some padding)
+      const navHeight = 80;
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+
+      // Use window.scrollTo for more reliable smooth scrolling
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    } else {
+      // Fallback: try with querySelector if getElementById fails
+      const el = document.querySelector(to);
+      if (el) {
+        const navHeight = 80;
+        const elementPosition = el.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth',
+        });
+      }
     }
   }
 };

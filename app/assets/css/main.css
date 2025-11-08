@@ -1,2 +1,14 @@
 @import 'tailwindcss';
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* Enable smooth scrolling globally */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure smooth scrolling works well with reduced motion preferences */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
