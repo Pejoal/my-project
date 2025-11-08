@@ -96,10 +96,10 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
+import { nextTick, onMounted, ref } from 'vue';
 
 // ──────────────────────────────────────
-// 1. Frontend
+// Technical Skills – Categorized
 // ──────────────────────────────────────
 const frontendSkills = [
   { name: 'Vue / Nuxt.js', level: 88, icon: 'simple-icons:nuxtdotjs' },
@@ -110,18 +110,12 @@ const frontendSkills = [
   { name: 'TypeScript', level: 87, icon: 'simple-icons:typescript' },
 ];
 
-// ──────────────────────────────────────
-// 2. Mobile
-// ──────────────────────────────────────
 const mobileSkills = [
   { name: 'React Native', level: 95, icon: 'simple-icons:react' },
   { name: 'Expo', level: 92, icon: 'simple-icons:expo' },
   { name: 'Flutter (Basic)', level: 65, icon: 'simple-icons:flutter' },
 ];
 
-// ──────────────────────────────────────
-// 3. Backend
-// ──────────────────────────────────────
 const backendSkills = [
   { name: 'Laravel / PHP', level: 85, icon: 'simple-icons:laravel' },
   { name: 'Node.js', level: 82, icon: 'simple-icons:nodedotjs' },
@@ -130,9 +124,6 @@ const backendSkills = [
   { name: 'REST APIs', level: 90, icon: 'heroicons:globe-alt' },
 ];
 
-// ──────────────────────────────────────
-// 4. Database & DevOps
-// ──────────────────────────────────────
 const dbDevOpsSkills = [
   { name: 'MongoDB', level: 87, icon: 'simple-icons:mongodb' },
   { name: 'MySQL / MariaDB', level: 90, icon: 'simple-icons:mysql' },
@@ -144,9 +135,6 @@ const dbDevOpsSkills = [
   { name: 'AWS (EC2, S3)', level: 70, icon: 'simple-icons:amazonaws' },
 ];
 
-// ──────────────────────────────────────
-// 5. Testing & Tools
-// ──────────────────────────────────────
 const testingToolsSkills = [
   { name: 'Jest', level: 85, icon: 'simple-icons:jest' },
   { name: 'Cypress', level: 78, icon: 'simple-icons:cypress' },
@@ -178,7 +166,7 @@ const softSkills = [
 ];
 
 // ──────────────────────────────────────
-// Progress Refs
+// Progress Refs (one per category)
 // ──────────────────────────────────────
 const frontendProgress = ref([]);
 const mobileProgress = ref([]);
@@ -188,22 +176,25 @@ const testingToolsProgress = ref([]);
 const softProgress = ref([]);
 
 // ──────────────────────────────────────
-// Animate on Mount
+// Animate All Progress Bars
 // ──────────────────────────────────────
-onMounted(() => {
-  const animate = (refs, skills, delay) => {
-    setTimeout(() => {
-      refs.value.forEach((el, i) => {
-        if (el && skills[i]) el.style.width = `${skills[i].level}%`;
-      });
-    }, delay);
-  };
+const animateProgress = (refArray, skills) => {
+  nextTick(() => {
+    refArray.value.forEach((el, i) => {
+      if (el && skills[i]) {
+        el.style.width = `${skills[i].level}%`;
+      }
+    });
+  });
+};
 
-  animate(frontendProgress, frontendSkills, 300);
-  animate(mobileProgress, mobileSkills, 400);
-  animate(backendProgress, backendSkills, 500);
-  animate(dbDevOpsProgress, dbDevOpsSkills, 600);
-  animate(testingToolsProgress, testingToolsSkills, 700);
-  animate(softProgress, softSkills, 800);
+onMounted(() => {
+  // Animate each category with slight delay
+  setTimeout(() => animateProgress(frontendProgress, frontendSkills), 300);
+  setTimeout(() => animateProgress(mobileProgress, mobileSkills), 400);
+  setTimeout(() => animateProgress(backendProgress, backendSkills), 500);
+  setTimeout(() => animateProgress(dbDevOpsProgress, dbDevOpsSkills), 600);
+  setTimeout(() => animateProgress(testingToolsProgress, testingToolsSkills), 700);
+  setTimeout(() => animateProgress(softProgress, softSkills), 800);
 });
 </script>
