@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900"
+    class="min-h-screen overflow-hidden bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900"
   >
     <NuxtRouteAnnouncer />
 
@@ -27,8 +27,6 @@
       :game-apps="gameApps"
     />
     <WebProjectsSection />
-
-    <!-- Contact Section -->
     <ContactSection />
 
     <!-- Footer -->
