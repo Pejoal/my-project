@@ -165,8 +165,8 @@ const mobileOpen = ref(false);
 const navLinks = [
   { label: 'Home', to: '#home' },
   { label: 'About', to: '#about' },
-  { label: 'Skills', to: '#skills' },
   { label: 'Apps', to: '#apps' },
+  { label: 'Skills', to: '#skills' },
   { label: 'Web Projects', to: '#web-projects' },
   { label: 'Contact', to: '#contact' },
 ];
