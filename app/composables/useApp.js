@@ -89,7 +89,7 @@ export const useAppData = () => {
     },
     {
       id: 'a1_a2_italian_grammar',
-      iosId: null,
+      iosId: 'a1-a2-italian-grammar/id6754820225',
       title: 'A1-A2 Italian Grammar',
       description: 'Italian grammar essentials',
       icon: '📖',
@@ -177,6 +177,14 @@ export const useAppData = () => {
       title: 'Slides Puzzle',
       description: 'Classic sliding puzzle game',
       icon: '🧩',
+      category: 'game',
+    },
+    {
+      id: 'drop_2048',
+      iosId: 'drop-2048-tile-merge-puzzle/id6755253445',
+      title: 'Drop 2048',
+      description: 'Merge tiles to reach 2048',
+      icon: '✨',
       category: 'game',
     },
   ]);
