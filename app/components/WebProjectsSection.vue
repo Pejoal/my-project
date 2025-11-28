@@ -89,7 +89,7 @@ const projects = ref([
     description:
       'An ERP system built with Laravel, MariaDB, Vue 3, and modern technologies. <br /> <strong>Note:</strong> The live site may take up to 1 minute to load on the first visit. <br /> Use test (admin) credentials: (Username: <strong>pejoal</strong>, Password: <strong>password</strong>).',
     live: 'https://project-manager-tvrw.onrender.com/payroll/dashboard',
-    image: '/assets/erp.png',
+    image: 'https://raw.githubusercontent.com/Pejoal/my-project/refs/heads/main/public/assets/erp.png',
     isNew: true,
     isSpecial: true,
   },
