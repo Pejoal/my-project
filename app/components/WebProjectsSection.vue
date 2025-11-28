@@ -30,6 +30,13 @@
               NEW
             </span>
 
+            <span
+              v-if="proj?.isSpecial"
+              class="absolute top-3 left-3 bg-purple-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md"
+            >
+              SPECIAL
+            </span>
+
             <img
               :src="proj.image"
               :alt="proj.title"
@@ -82,8 +89,10 @@ const projects = ref([
     description:
       'An ERP system built with Laravel, MariaDB, Vue 3, and modern technologies. <br /> <strong>Note:</strong> The live site may take up to 1 minute to load on the first visit. <br /> Use test (admin) credentials: (Username: <strong>pejoal</strong>, Password: <strong>password</strong>).',
     live: 'https://project-manager-tvrw.onrender.com/payroll/dashboard',
-    image: '/assets/erp.png',
+    image:
+      'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520254233-ed1d9d0e-5c71-4cef-aa3d-6babd861effb.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T172226Z&X-Amz-Expires=300&X-Amz-Signature=60b25d10d799f44de1b6947bcb8709e60107c775b5ac9e73cc8959fc8295b15f&X-Amz-SignedHeaders=host',
     isNew: true,
+    isSpecial: true,
   },
   {
     title: 'E-Commerce',
