@@ -44,7 +44,7 @@ export const useAppData = () => {
       iosId: 'learn-english-a1-c2/id6754513056',
       title: 'Learn English A1-C2',
       description: 'Complete English learning course',
-      icon: 'https://play-lh.googleusercontent.com/9SDTTXsWCNsEj0Xn6ncDrjPHETHwfJHgRDO_goNc6U272GjUvzs_CrjLFAocknWt-c5POlt8ieHdGKDu7JakoA=w480-h960-rw',
+      icon: 'https://lh3.googleusercontent.com/QrxnSOK7rTmSIHPhkOs_MhaXn3rlxR1tehtJJLAmQ7R8lyWeEX4bDb-w_TVAe5BBp1JtxB4S3NeY8TQ3w9EYNQ',
       category: 'english',
     },
     {
