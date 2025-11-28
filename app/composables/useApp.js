@@ -9,7 +9,7 @@ export const useAppData = () => {
       iosId: 'deutschlernen-a1-c2-offline/id6754511381',
       title: 'Learn German A1-C2',
       description: 'Comprehensive German learning app with offline support',
-      icon: '🇩🇪',
+      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520243409-960ddcce-2de7-4a54-9110-1cc0133c3702.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T170033Z&X-Amz-Expires=300&X-Amz-Signature=ae118c74f576959db24d1e9d246de238feab70fe3ebc609eb19e9b3579e2f6b9&X-Amz-SignedHeaders=host',
       category: 'german',
     },
     {
@@ -42,7 +42,7 @@ export const useAppData = () => {
       iosId: 'learn-english-a1-c2/id6754513056',
       title: 'Learn English A1-C2',
       description: 'Complete English learning course',
-      icon: '🇺🇸',
+      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520251408-570d1310-b4e3-45dd-ba3d-ea95929eda19.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T171311Z&X-Amz-Expires=300&X-Amz-Signature=76d3019110ccb4d55b6024257cb013d3fd6712fbd1478bdf5250d5f1c7464a5e&X-Amz-SignedHeaders=host',
       category: 'english',
     },
     {

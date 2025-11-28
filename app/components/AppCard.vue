@@ -11,9 +11,10 @@
     <!-- Horizontal Layout -->
     <div v-if="horizontal" class="text-center">
       <div
-        :class="`w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 ${getColorClasses(color).bg} group-hover:scale-110`"
+        :class="`w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 ${getColorClasses(color).bg} group-hover:scale-110 overflow-hidden`"
       >
-        <span class="text-4xl">{{ app.icon }}</span>
+        <img v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" />
+        <span v-else class="text-4xl">{{ app.icon }}</span>
       </div>
 
       <div class="space-y-2">
@@ -53,9 +54,10 @@
     <!-- Vertical Layout -->
     <div v-else class="flex items-center space-x-4">
       <div
-        :class="`w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 transition-all duration-300 ${getColorClasses(color).bg} group-hover:scale-110`"
+        :class="`w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 transition-all duration-300 ${getColorClasses(color).bg} group-hover:scale-110 overflow-hidden`"
       >
-        <span class="text-3xl">{{ app.icon }}</span>
+        <img v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" />
+        <span v-else class="text-3xl">{{ app.icon }}</span>
       </div>
 
       <div class="flex-1 min-w-0">
@@ -108,6 +110,11 @@ defineProps({
   color: { type: String, default: 'blue' },
   horizontal: { type: Boolean, default: false },
 });
+
+const isUrl = (str) => {
+  if (!str) return false;
+  return str.startsWith('http') || str.startsWith('/') || str.startsWith('assets');
+};
 
 const getColorClasses = (color) => {
   const colors = {
