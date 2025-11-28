@@ -59,7 +59,7 @@ export const useAppData = () => {
       iosId: 'تعلم-الإسبانية/id6754511440',
       title: 'Learn Spanish',
       description: 'Master Spanish with interactive lessons',
-      icon: '🇪🇸',
+      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520255586-7819ece4-586d-44ef-9dc3-8f84add92f24.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T172700Z&X-Amz-Expires=300&X-Amz-Signature=97405bc38939108b62ad68db0e0fa7a2fb9f85f2625d75d95926a98241e23308&X-Amz-SignedHeaders=host',
       category: 'spanish',
     },
     {
@@ -84,7 +84,7 @@ export const useAppData = () => {
       iosId: 'تعلم-الإيطالية/id6754513406',
       title: 'Learn Italian',
       description: 'Discover Italian language and culture',
-      icon: '🇮🇹',
+      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520255408-e1b693dd-4e65-452c-a684-02001e1fd26d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T172614Z&X-Amz-Expires=300&X-Amz-Signature=a26b468c8a34c6c40b6d38488797411874fe012f4cca0a8b388458b7069696ce&X-Amz-SignedHeaders=host',
       category: 'italian',
     },
     {
@@ -117,7 +117,7 @@ export const useAppData = () => {
       iosId: 'تعلم-الروسية-بدون-نت/id6754518388',
       title: 'Learn Russian',
       description: 'Russian language course offline',
-      icon: '🇷🇺',
+      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520255176-30393c78-61cd-4c42-9b0b-031bb7e30445.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T172531Z&X-Amz-Expires=300&X-Amz-Signature=08a38e5349917ba7af68b024c7a454506064b11c42e62b0b5552ea730b911f65&X-Amz-SignedHeaders=host',
       category: 'other',
     },
     // Utility Apps
@@ -134,7 +134,7 @@ export const useAppData = () => {
       iosId: null,
       title: 'Video Player Pro',
       description: 'Professional video player with advanced features',
-      icon: '📱',
+      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520255732-b1622c37-cf9e-4bc8-9328-ec7c222be7a6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T172740Z&X-Amz-Expires=300&X-Amz-Signature=56096048e2febe969083a5b9d6457100268fbaea562fcaf19d4347bcde1a8ed7&X-Amz-SignedHeaders=host',
       category: 'utility',
     },
     {
@@ -142,7 +142,7 @@ export const useAppData = () => {
       iosId: 'password-manager-pro-offline/id6754517449',
       title: 'Password Manager Pro',
       description: 'Secure offline password management',
-      icon: '🔐',
+      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520256045-f9aa7de8-5c5c-49ff-bb60-749663db8c2b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T172906Z&X-Amz-Expires=300&X-Amz-Signature=198e05586faef761c9d55517181fb3044e6467b50c8ed198ba10f6d18f0d8a88&X-Amz-SignedHeaders=host',
       category: 'utility',
     },
     // Test Apps
