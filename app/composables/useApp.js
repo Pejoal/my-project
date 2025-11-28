@@ -27,7 +27,7 @@ export const useAppData = () => {
       iosId: null,
       title: 'German for Nurses',
       description: 'Specialized German course for healthcare professionals',
-      icon: '🏥',
+      icon: 'https://play-lh.googleusercontent.com/zl3uC30SnfKJlxAXGbn4-gm5NWTQwfWQOTRw17FqUBADnErYWfp16SZXlO_ja4n6SBIzQm2CCCJDkdi7K_5Iqg=w480-h960-rw',
       category: 'german',
     },
     {
@@ -44,7 +44,7 @@ export const useAppData = () => {
       iosId: 'learn-english-a1-c2/id6754513056',
       title: 'Learn English A1-C2',
       description: 'Complete English learning course',
-      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520251408-570d1310-b4e3-45dd-ba3d-ea95929eda19.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T171311Z&X-Amz-Expires=300&X-Amz-Signature=76d3019110ccb4d55b6024257cb013d3fd6712fbd1478bdf5250d5f1c7464a5e&X-Amz-SignedHeaders=host',
+      icon: 'https://play-lh.googleusercontent.com/9SDTTXsWCNsEj0Xn6ncDrjPHETHwfJHgRDO_goNc6U272GjUvzs_CrjLFAocknWt-c5POlt8ieHdGKDu7JakoA=w480-h960-rw',
       category: 'english',
     },
     {
@@ -52,7 +52,7 @@ export const useAppData = () => {
       iosId: 'a1-a2-english-grammar/id6754511839',
       title: 'A1-A2 English Grammar',
       description: 'English grammar trainer for beginners',
-      icon: '📖',
+      icon: 'https://play-lh.googleusercontent.com/5M8qhSvPY24uX0jGa7yNWYnWxg_a-KAaFDjmBDtzxeLZ0AFKWnb4bMxBtL66XSqfTVHCgidp5cSwU4qnJ9EcAFE=w480-h960-rw',
       category: 'english',
     },
     // Spanish Learning Apps
@@ -61,7 +61,7 @@ export const useAppData = () => {
       iosId: 'تعلم-الإسبانية/id6754511440',
       title: 'Learn Spanish',
       description: 'Master Spanish with interactive lessons',
-      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520255586-7819ece4-586d-44ef-9dc3-8f84add92f24.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T172700Z&X-Amz-Expires=300&X-Amz-Signature=97405bc38939108b62ad68db0e0fa7a2fb9f85f2625d75d95926a98241e23308&X-Amz-SignedHeaders=host',
+      icon: 'https://play-lh.googleusercontent.com/tlmFlmDOE9Oqg_NdJiC-9OHsvptRFIy3qgUu7Mdk_CTlJkDTgPa2YTATWuHlPohTVrpQD9eIuKdPq2174NifR-o=w480-h960-rw',
       category: 'spanish',
     },
     {
@@ -69,7 +69,7 @@ export const useAppData = () => {
       iosId: null,
       title: 'A1-A2 Spanish Grammar',
       description: 'Spanish grammar fundamentals',
-      icon: '📖',
+      icon: 'https://play-lh.googleusercontent.com/H6VC2opj0_aYspEvyTQ_j1KE6b8D1WbeQmkZgYYUqO3dAjwSWb-_NOwMsF7jxB6iqgBSusalcqI78t57TUSp=w480-h960-rw',
       category: 'spanish',
     },
     {
@@ -77,7 +77,7 @@ export const useAppData = () => {
       iosId: 'learn-spanish-with-stories/id6754769339',
       title: 'Spanish Stories',
       description: 'Learn Spanish through captivating stories',
-      icon: '📚',
+      icon: 'https://play-lh.googleusercontent.com/VWh3S-gzTYaYs4h-c0_5R98Hw_uBfUtfJmG9FUXwd5lDjD8I00WOh6WYvHOMDQZuEd-_gvGRu2KBFycYuQOxgA=w480-h960-rw',
       category: 'spanish',
     },
     // Italian Learning Apps
@@ -86,7 +86,7 @@ export const useAppData = () => {
       iosId: 'تعلم-الإيطالية/id6754513406',
       title: 'Learn Italian',
       description: 'Discover Italian language and culture',
-      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520255408-e1b693dd-4e65-452c-a684-02001e1fd26d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T172614Z&X-Amz-Expires=300&X-Amz-Signature=a26b468c8a34c6c40b6d38488797411874fe012f4cca0a8b388458b7069696ce&X-Amz-SignedHeaders=host',
+      icon: 'https://play-lh.googleusercontent.com/kKaYxO8ads0_4VCsyQ7-KMWvaOyOwOuuPVLRNdIwgTxnR6U2YZVz6gLdlZzuge7T5N61BTiEZHduZR9-dOdZ4Qw=w480-h960-rw',
       category: 'italian',
     },
     {
@@ -94,7 +94,7 @@ export const useAppData = () => {
       iosId: 'a1-a2-italian-grammar/id6754820225',
       title: 'A1-A2 Italian Grammar',
       description: 'Italian grammar essentials',
-      icon: '📖',
+      icon: 'https://play-lh.googleusercontent.com/HRc3EIAc93VtDBgBdzhFWMjTe-cHC9wfcANtBM8CmhxRE62fu29YnvEmY_AWqgeN94WktGSriHjsbqOG9yAv=w480-h960-rw',
       category: 'italian',
     },
     {
@@ -102,7 +102,7 @@ export const useAppData = () => {
       iosId: 'learn-italian-with-stories/id6754609859',
       title: 'Italian Stories',
       description: 'Learn Italian with engaging stories',
-      icon: '📚',
+      icon: 'https://play-lh.googleusercontent.com/JTqP5i8KW7mkG-UXtckhXU0ld5EgG-F3u9WBnTfdXhOTDYSu-5Lafu1RoGKjlII_THjgb4aojHBbwgHbBBP_hWo=w480-h960-rw',
       category: 'italian',
     },
     // Other Languages
@@ -111,7 +111,7 @@ export const useAppData = () => {
       iosId: 'apprendre-le-français/id6754800257',
       title: 'Learn French',
       description: 'Master French language with ease',
-      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520253810-9b65e8b8-af6f-4612-972d-9f577f733460.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T172057Z&X-Amz-Expires=300&X-Amz-Signature=b6b5cea7586d8ff87a51095fdb8f935d37669581695306781ae39b356059ff7f&X-Amz-SignedHeaders=host',
+      icon: 'https://play-lh.googleusercontent.com/FTg1fGLFqAQR0YbkHb03xubut-H5Fy5L92o36MJOVdrLpgVOmQXshPr2FnYdBpytg9djJxjIrUMfMKcf8c0-SdI=w480-h960-rw',
       category: 'other',
     },
     {
