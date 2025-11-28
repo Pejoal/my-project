@@ -2,7 +2,7 @@
 <template>
   <div
     :class="`
-      group cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl relative
+      group transition-all duration-300 hover:scale-105 hover:shadow-xl relative
       ${horizontal ? 'w-[280px] shrink-0' : 'w-full'}
       bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700
       p-6 shadow-lg hover:shadow-2xl
