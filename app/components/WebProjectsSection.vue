@@ -89,8 +89,7 @@ const projects = ref([
     description:
       'An ERP system built with Laravel, MariaDB, Vue 3, and modern technologies. <br /> <strong>Note:</strong> The live site may take up to 1 minute to load on the first visit. <br /> Use test (admin) credentials: (Username: <strong>pejoal</strong>, Password: <strong>password</strong>).',
     live: 'https://project-manager-tvrw.onrender.com/payroll/dashboard',
-    image:
-      'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520254233-ed1d9d0e-5c71-4cef-aa3d-6babd861effb.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T172226Z&X-Amz-Expires=300&X-Amz-Signature=60b25d10d799f44de1b6947bcb8709e60107c775b5ac9e73cc8959fc8295b15f&X-Amz-SignedHeaders=host',
+    image: '/assets/erp.png',
     isNew: true,
     isSpecial: true,
   },
@@ -114,7 +113,7 @@ const projects = ref([
     description:
       'A multiplayer card game with features such as card deck management (shuffling, dealing, etc.), animations for card movements, responsive design for different devices, and real-time playing. Developed using Laravel, Inertia, Vue 3, TailwindCSS, Docker, and MySQL.',
     github: 'https://github.com/Pejoal/Game',
-    image: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520254907-ca1ace80-ff5f-40bd-83bb-6f230cfa8de8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T172443Z&X-Amz-Expires=300&X-Amz-Signature=10f04287d62ae54d8620cb5856dc7f526b85d3619c891b1e36907332b6424ad6&X-Amz-SignedHeaders=host',
+    image: '/assets/game1.png',
   },
   {
     title: 'Social Media App',
