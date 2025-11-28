@@ -119,7 +119,7 @@ export const useAppData = () => {
       iosId: 'تعلم-الروسية-بدون-نت/id6754518388',
       title: 'Learn Russian',
       description: 'Russian language course offline',
-      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520255176-30393c78-61cd-4c42-9b0b-031bb7e30445.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T172531Z&X-Amz-Expires=300&X-Amz-Signature=08a38e5349917ba7af68b024c7a454506064b11c42e62b0b5552ea730b911f65&X-Amz-SignedHeaders=host',
+      icon: 'https://play-lh.googleusercontent.com/ecJrhMFEcyS7AASIPqRuHF390FHzEVKXjO5nT_YwK8EPV0F6UrwWK9vPsnrv7XMDkQxPSuRgKI84rul4hNEZR80=w480-h960-rw',
       category: 'other',
     },
     // Utility Apps
@@ -128,7 +128,7 @@ export const useAppData = () => {
       iosId: 'qr-manager-pro/id6754516032',
       title: 'QR Manager Pro',
       description: 'Advanced QR code scanner and generator',
-      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520257609-e80589ad-5c97-4ac0-8d3b-40a5f363097a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T173450Z&X-Amz-Expires=300&X-Amz-Signature=706c0b522c9a1da78666131c22a07c1bd8e8c4048c0c7eb766a43a31b7697b1b&X-Amz-SignedHeaders=host',
+      icon: 'https://play-lh.googleusercontent.com/8340moQriI1gjAyl9UCaXvzpjHTARQiHV1uQssaPjwBF_vTJLc0CGwx-tXTNerVR106SsJnTaQyJUMNaeRmvdQ=w480-h960-rw',
       category: 'utility',
     },
     {
@@ -136,7 +136,7 @@ export const useAppData = () => {
       iosId: null,
       title: 'Video Player Pro',
       description: 'Professional video player with advanced features',
-      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520255732-b1622c37-cf9e-4bc8-9328-ec7c222be7a6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T172740Z&X-Amz-Expires=300&X-Amz-Signature=56096048e2febe969083a5b9d6457100268fbaea562fcaf19d4347bcde1a8ed7&X-Amz-SignedHeaders=host',
+      icon: 'https://play-lh.googleusercontent.com/5D0j0jDuEkJlupMVWmZD0ey7LD7sF_PR98lE8S1GUSeZhMqd1XQDefVJcwUgMmanfieRwPTqGnjE4CfjTSas=w480-h960-rw',
       category: 'utility',
     },
     {
@@ -144,7 +144,7 @@ export const useAppData = () => {
       iosId: 'password-manager-pro-offline/id6754517449',
       title: 'Password Manager Pro',
       description: 'Secure offline password management',
-      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520256045-f9aa7de8-5c5c-49ff-bb60-749663db8c2b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T172906Z&X-Amz-Expires=300&X-Amz-Signature=198e05586faef761c9d55517181fb3044e6467b50c8ed198ba10f6d18f0d8a88&X-Amz-SignedHeaders=host',
+      icon: 'https://play-lh.googleusercontent.com/hArv1RwvUXVMK-xVObRI5hnem_vQkrFEYpklD5PJmPHyRK_T0lZzyB8g_YVcDo_THvRVCYJQ-dIeV2DwMasr=w480-h960-rw',
       category: 'utility',
     },
     // Test Apps
@@ -178,7 +178,7 @@ export const useAppData = () => {
       iosId: 'slides-puzzle/id6754782354',
       title: 'Slides Puzzle',
       description: 'Classic sliding puzzle game',
-      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520252756-5aaa0bf5-5eb4-4074-8045-d1b40b03fb2a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T171749Z&X-Amz-Expires=300&X-Amz-Signature=0be3386e5cf42d7979b7e620132de9f3baf134c1c57cc788b338ea6728138d21&X-Amz-SignedHeaders=host',
+      icon: 'https://play-lh.googleusercontent.com/f0iJrPUTgorot4CdqLFvew7E98NN5f_VAN4r5naAyxmxjUcuEdUlmVyouFi9yIlIJjfBhgMRfaUHfv-ZN-1N56Q=w480-h960-rw',
       category: 'game',
     },
     {
@@ -186,7 +186,7 @@ export const useAppData = () => {
       iosId: 'drop-2048-tile-merge-puzzle/id6755253445',
       title: 'Drop 2048',
       description: 'Merge tiles to reach 2048',
-      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520253388-78771fd1-2f5d-4b54-afc8-66b7bfb8e8d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T171940Z&X-Amz-Expires=300&X-Amz-Signature=4d20b01b46e51c34a2dde66cb0fd4273fb7883d934d3a1109ac76ff18ba11908&X-Amz-SignedHeaders=host',
+      icon: 'https://play-lh.googleusercontent.com/XMLMrG4XKo0VLQPgVWKvodo--J_lLwkBQMoFk4gbQxS_0F5tm1WUmzPwnHg26_hDbgmMZahg8ien2BVcAIMq=w480-h960-rw',
       category: 'game',
     },
     {
@@ -194,7 +194,7 @@ export const useAppData = () => {
       iosId: null,
       title: 'Connect 2048',
       description: 'Connect & Chain tiles to reach 2048',
-      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520251913-0b9e4783-3377-4a19-989c-9b1d6c141178.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T171451Z&X-Amz-Expires=300&X-Amz-Signature=7b5eba23d5b0215652bb38e034246de607dc058503c718238dfd2e5661e19b3d&X-Amz-SignedHeaders=host',
+      icon: 'https://play-lh.googleusercontent.com/Q27uTfFvmdvtQ3Hue3ZkrUofhiA9-6WvXcRmZC1yf0lWDXlvxh6BbUtWgwoPap7TnCHoBL4y076BIIu9lruHzA=w480-h960-rw',
       category: 'game',
     },
   ]);
