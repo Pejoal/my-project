@@ -153,7 +153,7 @@ export const useAppData = () => {
       iosId: 'app/pro-iq-test/id6754533659',
       title: 'Pro IQ Test',
       description: 'Professional IQ assessment tool',
-      icon: '🧠',
+      icon: 'https://play-lh.googleusercontent.com/oP1gSDk8iA_s_IFQ22s8hRLjd6F47bciCwEBq-ZumbgHbZY5UhnOLzNdk3kn64rYoU4u_rqiXTPxK43hJJSr6Q=w480-h960-rw',
       category: 'test',
     },
     {
@@ -161,7 +161,7 @@ export const useAppData = () => {
       iosId: 'trivia-test-pro/id6754518491',
       title: 'Trivia Test Pro',
       description: 'Challenge your knowledge with trivia',
-      icon: '🎯',
+      icon: 'https://play-lh.googleusercontent.com/1sE7hQ1is8RUru02eC-jIu4T1gmcROZkXd-NfnrPIg5BSnfeS3C02bhWoyDv-IOXzdHQ4tiYkMIAqEiL2qbvLA=w480-h960-rw',
       category: 'test',
     },
     {
@@ -169,7 +169,7 @@ export const useAppData = () => {
       iosId: 'personality-test-offline/id6754801097',
       title: 'Personality Test',
       description: 'Discover your personality type',
-      icon: '✨',
+      icon: 'https://play-lh.googleusercontent.com/GMXGBeAfthcNV2VCvZUcITNVQHIBZ3R8VvDRg_1txKpnKCaqn1d2xbOnLOLesYy1LR7zxdOwYxqYZ3dYxwVdCA=w480-h960-rw',
       category: 'test',
     },
     // Games
