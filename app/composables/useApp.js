@@ -126,7 +126,7 @@ export const useAppData = () => {
       iosId: 'qr-manager-pro/id6754516032',
       title: 'QR Manager Pro',
       description: 'Advanced QR code scanner and generator',
-      icon: '🔳',
+      icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/105957829/520257609-e80589ad-5c97-4ac0-8d3b-40a5f363097a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T173450Z&X-Amz-Expires=300&X-Amz-Signature=706c0b522c9a1da78666131c22a07c1bd8e8c4048c0c7eb766a43a31b7697b1b&X-Amz-SignedHeaders=host',
       category: 'utility',
     },
     {
