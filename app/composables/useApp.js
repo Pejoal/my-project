@@ -35,7 +35,7 @@ export const useAppData = () => {
       iosId: null,
       title: 'German Stories',
       description: 'Learn German through engaging stories',
-      icon: '📖',
+      icon: 'https://play-lh.googleusercontent.com/kKaYxO8ads0_4VCsyQ7-KMWvaOyOwOuuPVLRNdIwgTxnR6U2YZVz6gLdlZzuge7T5N61BTiEZHduZR9-dOdZ4Qw=w480-h960-rw',
       category: 'german',
     },
     // English Learning Apps
