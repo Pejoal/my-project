@@ -86,7 +86,7 @@ export const useAppData = () => {
       iosId: 'تعلم-الإيطالية/id6754513406',
       title: 'Learn Italian',
       description: 'Discover Italian language and culture',
-      icon: 'https://play-lh.googleusercontent.com/kKaYxO8ads0_4VCsyQ7-KMWvaOyOwOuuPVLRNdIwgTxnR6U2YZVz6gLdlZzuge7T5N61BTiEZHduZR9-dOdZ4Qw=w480-h960-rw',
+      icon: 'https://play-lh.googleusercontent.com/AvvzUoDS1zwwtXIvXgXpuel3u5IcyNh_6RlO3fMemstsELqpmwrjilu08piOJBdv_nIgEkHXFAqsAsP6tYnK=w480-h960-rw',
       category: 'italian',
     },
     {
