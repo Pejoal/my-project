@@ -197,6 +197,22 @@ export const useAppData = () => {
       icon: 'https://play-lh.googleusercontent.com/Q27uTfFvmdvtQ3Hue3ZkrUofhiA9-6WvXcRmZC1yf0lWDXlvxh6BbUtWgwoPap7TnCHoBL4y076BIIu9lruHzA=w480-h960-rw',
       category: 'game',
     },
+    {
+      id: 'game',
+      iosId: null,
+      title: 'Brick Breaker',
+      description: 'Break bricks with a ball and paddle',
+      icon: 'https://lh3.googleusercontent.com/S4RBz0N559ezHQ0ifs4l_D-zAph2iSFpB_KXea7eNhASzHIAaXPl2uCw98d1d_qUiWj3ZSyEXJgeQg1ldkO7QQ',
+      category: 'game',
+    },
+    {
+      id: 'robot',
+      iosId: null,
+      title: 'Crazy Robot',
+      description: 'Control a robot to discover new worlds',
+      icon: 'https://lh3.googleusercontent.com/CrRf5lllZFEkOk42Se_Dq9MFrobc78SZu3Kln-soflN6lC0E6iGMc5WrUWCKsC41rhLvvTTUBgWrIHKtqmfY',
+      category: 'game',
+    },
   ]);
 
   // Computed properties for filtered apps
