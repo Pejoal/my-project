@@ -24,7 +24,7 @@ export const useAppData = () => {
     },
     {
       id: 'german_for_nurses',
-      iosId: null,
+      iosId: 'https://apps.apple.com/us/app/german-for-nurses/id6756078684',
       title: 'German for Nurses',
       description: 'Specialized German course for healthcare professionals',
       icon: 'https://play-lh.googleusercontent.com/zl3uC30SnfKJlxAXGbn4-gm5NWTQwfWQOTRw17FqUBADnErYWfp16SZXlO_ja4n6SBIzQm2CCCJDkdi7K_5Iqg=w480-h960-rw',
@@ -207,7 +207,7 @@ export const useAppData = () => {
     },
     {
       id: 'robot',
-      iosId: null,
+      iosId: 'https://apps.apple.com/us/app/the-crazy-robot/id6756072137',
       title: 'Crazy Robot',
       description: 'Control a robot to discover new worlds',
       icon: 'https://lh3.googleusercontent.com/CrRf5lllZFEkOk42Se_Dq9MFrobc78SZu3Kln-soflN6lC0E6iGMc5WrUWCKsC41rhLvvTTUBgWrIHKtqmfY',
