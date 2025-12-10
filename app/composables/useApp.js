@@ -9,9 +9,7 @@ export const useAppData = () => {
       iosId: 'deutschlernen-a1-c2-offline/id6754511381',
       title: 'Learn German A1-C2',
       description: 'Comprehensive German learning app with offline support',
-      icon: 'https://play-lh.googleusercontent.com/GW36JH7z2AVc5tW4PGn17y8vMJ-xyJf6db40HNFUsKMJuMVZN_v7VJXTbFCigMBDRBjxDlrc06r-U3mriUHAlQ=w240-h480-rw',
-      srcset:
-        'https://play-lh.googleusercontent.com/GW36JH7z2AVc5tW4PGn17y8vMJ-xyJf6db40HNFUsKMJuMVZN_v7VJXTbFCigMBDRBjxDlrc06r-U3mriUHAlQ=w480-h960-rw 2x',
+      icon: 'https://lh3.googleusercontent.com/mk-Rg5AL9gFj7LoVTS3WECQiDnRuFlulrPpGDBEY7R8JO8jnHGZDWafnZYUI0ddfwK0WuoCwXCuEsehXsz1-',
       category: 'german',
     },
     {
