@@ -205,7 +205,7 @@ export const useAppData = () => {
     },
     {
       id: 'robot',
-      iosId: 'https://apps.apple.com/us/app/the-crazy-robot/id6756072137',
+      iosId: 'the-crazy-robot/id6756072137',
       title: 'Crazy Robot',
       description: 'Control a robot to discover new worlds',
       icon: 'https://lh3.googleusercontent.com/CrRf5lllZFEkOk42Se_Dq9MFrobc78SZu3Kln-soflN6lC0E6iGMc5WrUWCKsC41rhLvvTTUBgWrIHKtqmfY',
