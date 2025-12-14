@@ -197,7 +197,7 @@ export const useAppData = () => {
     },
     {
       id: 'game',
-      iosId: null,
+      iosId: 'brick-bounce-paddle-smash/id6755907771',
       title: 'Brick Breaker',
       description: 'Break bricks with a ball and paddle',
       icon: 'https://lh3.googleusercontent.com/S4RBz0N559ezHQ0ifs4l_D-zAph2iSFpB_KXea7eNhASzHIAaXPl2uCw98d1d_qUiWj3ZSyEXJgeQg1ldkO7QQ',
