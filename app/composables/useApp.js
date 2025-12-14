@@ -131,7 +131,7 @@ export const useAppData = () => {
     },
     {
       id: 'videoplayer',
-      iosId: null,
+      iosId: 'video-player-premium/id6754518521',
       title: 'Video Player Pro',
       description: 'Professional video player with advanced features',
       icon: 'https://play-lh.googleusercontent.com/5D0j0jDuEkJlupMVWmZD0ey7LD7sF_PR98lE8S1GUSeZhMqd1XQDefVJcwUgMmanfieRwPTqGnjE4CfjTSas=w480-h960-rw',
