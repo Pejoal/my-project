@@ -30,7 +30,7 @@ export const useAppData = () => {
     },
     {
       id: 'learn_german_from_stories',
-      iosId: null,
+      iosId: 'deutsch-lernen-mit-geschichten/id6754534408',
       title: 'German Stories',
       description: 'Learn German through engaging stories',
       icon: 'https://play-lh.googleusercontent.com/kKaYxO8ads0_4VCsyQ7-KMWvaOyOwOuuPVLRNdIwgTxnR6U2YZVz6gLdlZzuge7T5N61BTiEZHduZR9-dOdZ4Qw=w480-h960-rw',
