@@ -19,8 +19,8 @@
         <section>
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">1. Acceptance of Terms</h2>
           <p class="dark:text-gray-300">
-            By using any app or website created by <strong>Pejoal Dev Studio</strong> (the
-            "Services"), you agree to these Terms, <em>unless a specific app provides its own terms</em>.
+            By using any app or website created by <strong>Pejoal Dev Studio</strong> (the "Services"), you agree to
+            these Terms, <em>unless a specific app provides its own terms</em>.
           </p>
         </section>
 
@@ -38,8 +38,8 @@
         <section>
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">3. Intellectual Property</h2>
           <p class="dark:text-gray-300">
-            All content, code, and designs are owned by <strong>Pejoal Dev Studio</strong> and
-            protected by copyright. You may not copy, modify, or distribute without permission.
+            All content, code, and designs are owned by <strong>Pejoal Dev Studio</strong> and protected by copyright.
+            You may not copy, modify, or distribute without permission.
           </p>
         </section>
 
@@ -102,34 +102,21 @@
             </a>
           </p>
         </section>
-
-        <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">10. Impressum</h2>
-          <div class="dark:text-gray-300">
-            <p class="mb-2"><strong>Pejoal Dev Studio</strong></p>
-            <p class="mb-2">Owner: Pejoal Hanna</p>
-            <p class="mb-2">
-              Contact:
-              <a href="mailto:pejoal.business@gmail.com" class="text-blue-600 hover:underline">
-                pejoal.business@gmail.com
-              </a>
-            </p>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">
-              <em
-                >Note: Full legal address and representative details will be provided upon request or updated here
-                shortly.</em
-              >
-            </p>
-          </div>
-        </section>
       </div>
 
-      <div class="mt-10 pb-4 text-center">
+      <div class="mt-10 pb-4 text-center space-x-4">
         <NuxtLink
           to="/privacy-policy"
           class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
         >
-          ← View Privacy Policy
+          Privacy Policy
+        </NuxtLink>
+        <span class="text-gray-400">|</span>
+        <NuxtLink
+          to="/impressum"
+          class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
+        >
+          Impressum
         </NuxtLink>
       </div>
     </div>

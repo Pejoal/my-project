@@ -95,12 +95,19 @@
         </section>
       </div>
 
-      <div class="mt-10 pb-4 text-center">
+      <div class="mt-10 pb-4 text-center space-x-4">
         <NuxtLink
           to="/terms"
           class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
         >
-          ← Terms and Conditions
+          Terms and Conditions
+        </NuxtLink>
+        <span class="text-gray-400">|</span>
+        <NuxtLink
+          to="/impressum"
+          class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
+        >
+          Impressum
         </NuxtLink>
       </div>
     </div>
