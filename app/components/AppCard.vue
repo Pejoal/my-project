@@ -99,7 +99,7 @@
     </div>
 
     <div
-      class="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-indigo-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
+      class="absolute inset-0 bg-linear-to-r from-blue-600/10 to-indigo-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
     ></div>
   </div>
 </template>

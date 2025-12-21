@@ -6,6 +6,8 @@
 
   <AboutSection />
 
+  <ServicesSection />
+
   <AppsPortfolioSection
     :german-apps="germanApps"
     :english-apps="englishApps"
@@ -17,9 +19,8 @@
     :game-apps="gameApps"
   />
 
-  <SkillsSection />
-
   <WebProjectsSection />
+  <SkillsSection />
 </template>
 
 <script setup>

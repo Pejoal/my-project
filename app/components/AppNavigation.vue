@@ -5,7 +5,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <NuxtLink to="#home" class="flex items-center gap-2">
-          <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+          <div class="w-8 h-8 bg-linear-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
             <span class="text-white font-bold text-sm">P</span>
           </div>
           <span class="font-bold text-xl text-gray-900 dark:text-white">Pejoal</span>
@@ -165,9 +165,10 @@ const mobileOpen = ref(false);
 const navLinks = [
   { label: 'Home', to: '#home' },
   { label: 'About', to: '#about' },
+  { label: 'Services', to: '#services' },
   { label: 'Apps', to: '#apps' },
-  { label: 'Skills', to: '#skills' },
   { label: 'Web Projects', to: '#web-projects' },
+  { label: 'Skills', to: '#skills' },
   { label: 'Contact', to: '#contact' },
 ];
 
