@@ -26,6 +26,12 @@
         >
           Terms of Service
         </NuxtLink>
+        <NuxtLink
+          to="/impressum"
+          class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition"
+        >
+          Impressum
+        </NuxtLink>
       </div>
 
       <p class="text-xs text-gray-500 dark:text-gray-400">
