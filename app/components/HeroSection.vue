@@ -52,7 +52,7 @@
             <div class="text-gray-600 dark:text-gray-300">Published Apps</div>
           </div>
           <div class="text-center">
-            <div class="text-3xl font-bold text-gray-900 dark:text-white">100,000+</div>
+            <div class="text-3xl font-bold text-gray-900 dark:text-white">30,000+</div>
             <div class="text-gray-600 dark:text-gray-300">Downloads</div>
           </div>
           <div class="text-center">

@@ -11,7 +11,7 @@
         </div>
         <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-6">Discover My Apps</h2>
         <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Explore my collection of educational and utility apps that have helped millions of users worldwide.
+          Explore my collection of educational and utility apps that have helped 30k+ users worldwide.
         </p>
       </div>
 
