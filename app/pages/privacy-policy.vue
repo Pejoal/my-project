@@ -15,29 +15,27 @@
       <div class="max-w-none space-y-7 prose prose-lg dark:prose-invert">
         <p class="dark:text-gray-300">
           This Privacy Policy applies to <strong>all apps</strong> developed by
-          <strong>Pejoal Dev Studio</strong> ("we", "us", "our"),
-          <em>unless a specific app explicitly states otherwise in its description or in-app notice</em>.
+          <strong>Pejoal Dev Studio</strong> ("we", "us", "our").
         </p>
+
+        <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-100 dark:border-blue-800">
+          <p class="text-sm text-blue-800 dark:text-blue-200 m-0">
+            <strong>Note:</strong> The following policy represents our standard privacy commitment. However, some
+            specific apps may have unique features (such as online capabilities or optional data usage) that require
+            exceptions to this policy. In such cases, these exceptions will be
+            <strong>explicitly enabled and explained within the app itself</strong>. Unless such features are present
+            and disclosed, the standard policy below applies.
+          </p>
+        </div>
 
         <!-- 1. Personal Data -->
         <section>
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">1. Personal Data</h2>
           <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-            <li>
-              <strong>No personal data is collected, stored, or shared</strong> —
-              <em>unless explicitly stated otherwise in the app</em>.
-            </li>
-            <li>
-              <strong>No login or registration is required</strong> — <em>unless explicitly mentioned in the app</em>.
-            </li>
-            <li>
-              We do <strong>not collect</strong> names, email addresses, device IDs, or any unique identifiers —
-              <em>unless clearly disclosed in the app</em>.
-            </li>
-            <li>
-              User activity is <strong>not tracked or monitored</strong> —
-              <em>unless explicitly enabled and explained in the app</em>.
-            </li>
+            <li><strong>No personal data is collected, stored, or shared</strong>.</li>
+            <li><strong>No login or registration is required</strong>.</li>
+            <li>We do <strong>not collect</strong> names, email addresses, device IDs, or any unique identifiers.</li>
+            <li>User activity is <strong>not tracked or monitored</strong>.</li>
           </ul>
         </section>
 
@@ -46,7 +44,7 @@
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">2. Internet Access</h2>
           <p class="dark:text-gray-300">
             Our apps work <strong>entirely offline</strong> and <strong>do not connect to the internet</strong> or any
-            external servers — <em>unless explicitly stated otherwise in the app description</em>.
+            external servers.
           </p>
         </section>
 
@@ -63,18 +61,15 @@
             <li>Contacts</li>
             <li>Storage</li>
           </ul>
-          <p class="dark:text-gray-300 mt-3 text-sm italic">
-            <em>— unless explicitly required and clearly explained within the app.</em>
-          </p>
         </section>
 
         <!-- 4. Ads & Analytics -->
         <section>
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">4. Ads and Analytics</h2>
           <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-            <li>Our apps show <strong>no advertisements</strong> — <em>unless explicitly stated</em>.</li>
-            <li>We <strong>do not use analytics or tracking tools</strong> — <em>unless disclosed in the app</em>.</li>
-            <li>No third-party services are integrated that collect user data — <em>unless clearly mentioned</em>.</li>
+            <li>Our apps show <strong>no advertisements</strong>.</li>
+            <li>We <strong>do not use analytics or tracking tools</strong>.</li>
+            <li>No third-party services are integrated that collect user data.</li>
           </ul>
         </section>
 
@@ -83,8 +78,7 @@
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">5. Children</h2>
           <p class="dark:text-gray-300">
             Our apps are designed to be safe for all ages, including children under 13. Since
-            <strong>no personal data is collected by default</strong>, no parental consent is required —
-            <em>unless an app explicitly collects data and states otherwise</em>.
+            <strong>no personal data is collected by default</strong>, no parental consent is required.
           </p>
         </section>
 
@@ -115,7 +109,7 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Privacy Policy - Pejoal Dev Studio',
+  title: 'Privacy Policy - Pejoal Dev Studio, Owner: Pejoal Hanna',
   description: 'No data collection by default. Fully offline. Safe for all ages. Flexible per-app disclosures.',
 });
 </script>
