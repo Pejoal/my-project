@@ -1,7 +1,7 @@
 <!-- pages/impressum.vue -->
 <template>
   <div
-    class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 pt-24 px-4"
+    class="min-h-screen bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 pt-24 px-4"
   >
     <div class="max-w-4xl mx-auto">
       <NuxtLink
@@ -13,7 +13,7 @@
       </NuxtLink>
 
       <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Impressum</h1>
-      <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">Last updated: <strong>November 08, 2025</strong></p>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">Last updated: <strong>December 21, 2025</strong></p>
 
       <div class="max-w-none space-y-8 prose prose-lg dark:prose-invert">
         <section>
@@ -21,16 +21,16 @@
             <p class="mb-2"><strong>Pejoal Dev Studio</strong></p>
             <p class="mb-2">Owner: Pejoal Hanna</p>
             <p class="mb-2">
+              Address:<br />
+              Trappstraße 6<br />
+              46483 Wesel<br />
+              Germany
+            </p>
+            <p class="mb-2">
               Contact:
               <a href="mailto:pejoal.business@gmail.com" class="text-blue-600 hover:underline">
                 pejoal.business@gmail.com
               </a>
-            </p>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">
-              <em
-                >Note: Full legal address and representative details will be provided upon request or updated here
-                shortly.</em
-              >
             </p>
           </div>
         </section>

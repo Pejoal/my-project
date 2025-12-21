@@ -1,7 +1,7 @@
 <!-- pages/privacy-policy.vue -->
 <template>
   <div
-    class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 pt-24 px-4"
+    class="min-h-screen bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 pt-24 px-4"
   >
     <div class="max-w-4xl mx-auto">
       <NuxtLink to="/" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-8">
@@ -10,7 +10,7 @@
       </NuxtLink>
 
       <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-6">Privacy Policy</h1>
-      <p class="text-sm text-gray-500 dark:text-gray-400 mb-8">Last updated: November 08, 2025</p>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-8">Last updated: December 21, 2025</p>
 
       <div class="max-w-none space-y-7 prose prose-lg dark:prose-invert">
         <p class="dark:text-gray-300">
